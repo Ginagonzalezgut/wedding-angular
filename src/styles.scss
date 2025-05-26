@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+@use "./scss/variables.scss";
+@import "bootstrap/scss/functions";
+
+$grid-gutter-width: 40px;
+
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1208px,
+);
+
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/helpers";
+@import "bootstrap/scss/utilities/api";
+
+html,
+body {
+  font-family: var(--body-font);
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
