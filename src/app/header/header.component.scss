@@ -1,0 +1,21 @@
+.header {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-light);
+  position: fixed;
+  width: 100%;
+  top: 0;
+
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+}
