@@ -1,0 +1,12 @@
+.button {
+  background-color: #ffffff;
+  border: 1px solid black;
+  text-transform: uppercase;
+  padding-block: 12px;
+  padding-inline: 32px;
+
+  &--dark {
+    background-color: #000000;
+    color: #ffffff;
+  }
+}
