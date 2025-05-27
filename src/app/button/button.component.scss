@@ -6,8 +6,18 @@
   padding-block: 12px;
   padding-inline: 32px;
 
+  &:hover {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-light);
+  }
+
   &--dark {
     background-color: #000000;
     color: #ffffff;
+
+    &:hover {
+      background-color: var(--background-color);
+      color: var(--text-color-light);
+    }
   }
 }

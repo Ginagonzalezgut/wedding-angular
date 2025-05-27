@@ -3,7 +3,7 @@ import { ButtonComponent } from '../button/button.component';
 import { IconComponent } from '../icon/icon.component';
 
 @Component({
-  selector: 'app-card',
+  selector: 'card',
   imports: [ButtonComponent,IconComponent],
   templateUrl: './card.component.html',
   styleUrl: './card.component.scss'
@@ -11,4 +11,5 @@ import { IconComponent } from '../icon/icon.component';
 export class CardComponent {
   @Input() title = "";
   @Input() buttonLabel="";
+  @Input() icon="";
 }
