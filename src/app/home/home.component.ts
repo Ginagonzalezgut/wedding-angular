@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { HeroComponent } from '../hero/hero.component';
+import { CountdownComponent } from '../countdown/countdown.component';
 
 @Component({
   selector: 'app-home',
-  imports: [HeroComponent],
+  imports: [HeroComponent,CountdownComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

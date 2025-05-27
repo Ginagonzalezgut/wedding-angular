@@ -1,0 +1,26 @@
+.countdown {
+  &__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 40px;
+  }
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__date {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+    gap: 40px;
+    width: 798px;
+    &__number {
+      font-size: 64px;
+      font-weight: 300;
+      line-height: 1.4;
+    }
+  }
+}
