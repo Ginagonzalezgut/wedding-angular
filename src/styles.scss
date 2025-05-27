@@ -10,7 +10,7 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1208px,
+  xl: 1248px,
 );
 
 @import "bootstrap/scss/maps";
@@ -24,6 +24,10 @@ $container-max-widths: (
 @import "bootstrap/scss/grid";
 @import "bootstrap/scss/helpers";
 @import "bootstrap/scss/utilities/api";
+
+* {
+  -webkit-font-smoothing: antialiased;
+}
 
 html,
 body {
