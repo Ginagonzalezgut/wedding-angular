@@ -35,16 +35,28 @@
   </div>
 </div>
 
-<div class="container">
+<div class="container mt-80">
   <div class="row g-0">
-    <div class="col">
+    <div class="col-7 offset-1">
       <img
+        class="w-100"
         src="/home-images/dress-code.jpg"
         alt="Pareja celebrando felices el día de su boda"
       />
     </div>
-    <div class="col">
-      <card title="Dress Code" buttonLabel="contactar" icon="clothes">
+  </div>
+</div>
+
+<div class="container">
+  <div class="row g-0">
+    <div class="col-6 offset-5">
+      <card
+        id="dresscode__card"
+        title="Dress Code"
+        buttonLabel="contactar"
+        icon="clothes"
+        [compact]="true"
+      >
         <p>
           Queremos que se sientan cómodos y se vean increíbles en un día tan
           especial para nosotros, por eso les contamos un poco sobre el estilo
@@ -56,6 +68,51 @@
           te ayudamos encantados!
         </p>
       </card>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-80">
+  <div class="row g-0">
+    <div class="col-4">
+      <img
+        class="w-100 position-relative"
+        src="/home-images/detalle-arriba.jpg"
+        alt=""
+      />
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row g-0">
+    <div class="col-6 offset-3">
+      <card
+        class="gift__card"
+        title="UN DETALLE CON CARIÑO"
+        buttonLabel="enviar regalo"
+        icon="gift"
+        [compact]="true"
+      >
+        <p>
+          Lo más importante para nosotros es contar con su presencia en este día
+          tan especial.
+        </p>
+        <p>
+          Si desean hacernos un regalo, hemos optado por una lluvia de sobres,
+          que nos ayudará a comenzar esta nueva etapa juntos.
+        </p>
+      </card>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row g-0">
+    <div class="col-4 offset-8 dresscode__image">
+      <img
+        class="w-100 position-relative"
+        src="/home-images/detalle-abajo.jpg"
+        alt=""
+      />
     </div>
   </div>
 </div>

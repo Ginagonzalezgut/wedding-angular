@@ -8,4 +8,8 @@
   text-align: center;
   height: 708px;
   gap: 24px;
+
+  &--compact {
+    padding: 0 100px;
+  }
 }

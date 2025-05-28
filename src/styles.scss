@@ -13,6 +13,12 @@ $container-max-widths: (
   xl: 1248px,
 );
 
+$spacers: (
+  0: 0,
+  16: $spacer,
+  80: $spacer * 5,
+);
+
 @import "bootstrap/scss/maps";
 @import "bootstrap/scss/mixins";
 @import "bootstrap/scss/root";
@@ -50,4 +56,17 @@ h2 {
   line-height: 1.2;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+img {
+  display: block;
+}
+
+p {
+  margin-bottom: 24px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }

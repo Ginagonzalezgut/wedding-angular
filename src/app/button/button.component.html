@@ -1,3 +1,8 @@
-<button class="button" [class.button--dark]="isDark">
+<a
+  class="button"
+  [class.button--dark]="isDark"
+  [class.button--ondark]="onDark"
+  href="#"
+>
   <ng-content />
-</button>
+</a>

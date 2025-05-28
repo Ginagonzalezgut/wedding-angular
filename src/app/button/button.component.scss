@@ -1,10 +1,12 @@
 .button {
   background-color: #ffffff;
-  border: 1px solid black;
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
   text-transform: uppercase;
   line-height: 1.4;
   padding-block: 12px;
   padding-inline: 32px;
+  transition: all 0.2s linear;
 
   &:hover {
     background-color: var(--background-color-dark);
@@ -19,5 +21,8 @@
       background-color: var(--background-color);
       color: var(--text-color-light);
     }
+  }
+  &--ondark {
+    border-color: var(--text-color-light);
   }
 }

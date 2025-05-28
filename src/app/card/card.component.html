@@ -1,6 +1,8 @@
-<div class="card">
+<div class="card" [class.card--compact]="compact">
   <icon name="{{ icon }}"></icon>
   <h2 class="card__title">{{ title }}</h2>
-  <ng-content></ng-content>
+  <div>
+    <ng-content></ng-content>
+  </div>
   <app-button>{{ buttonLabel }}</app-button>
 </div>

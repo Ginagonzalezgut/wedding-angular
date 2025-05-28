@@ -12,4 +12,5 @@ export class CardComponent {
   @Input() title = "";
   @Input() buttonLabel="";
   @Input() icon="";
+  @Input() compact: boolean=false;
 }
