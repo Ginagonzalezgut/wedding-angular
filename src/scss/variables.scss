@@ -1,6 +1,8 @@
 :root {
-  --heading-font: "Open Sans", sans-serif;
-  --hero-font: "Playfair Display", serif;
+  --playfair: "Playfair Display", serif;
+
+  --heading-font: var(--playfair);
+  --hero-font: var(--playfair);
   --body-font: "Cairo", sans-serif;
 
   --black: #000000;

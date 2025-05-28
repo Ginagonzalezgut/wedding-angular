@@ -10,3 +10,22 @@
   margin-top: -170px;
   display: block;
 }
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  background-image: url(/home-images/banner.jpg);
+  background-repeat: no-repeat;
+  padding-top: 127px;
+  background-position: center top;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-heading {
+  font-size: 4rem;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 5px;
+  margin-bottom: 118px;
+}
