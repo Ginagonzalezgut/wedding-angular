@@ -1,8 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { ButtonComponent } from '../button/button.component';
 
-
-
 @Component({
   selector: 'hero',
   imports: [ButtonComponent],
@@ -14,8 +12,5 @@ export class HeroComponent {
 @Input() title = "";
 @Input() subtitle = "";
 @Input() buttonDisplay=false;
+@Input() backgroundImage="";
 }
-
-
-
-// UN BOTON QUE APREZCA O NO 
