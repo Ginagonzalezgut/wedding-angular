@@ -1,8 +1,17 @@
 <ul class="menu" [class.menu--column]="direction === 'column'">
   <li>
-    <a routerLink="/">Inicio</a>
+    <a
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      routerLink="/"
+      >Inicio</a
+    >
   </li>
-  <li><a>Nuestra Historia</a></li>
-  <li><a routerLink="/la-ciudad">La Ciudad </a></li>
-  <li><a>FAQS</a></li>
+  <li>
+    <a routerLinkActive="active" routerLink="/nuestra-historia"
+      >Nuestra Historia</a
+    >
+  </li>
+  <li><a routerLinkActive="active" routerLink="/la-ciudad">La Ciudad </a></li>
+  <li><a routerLinkActive="active">FAQS</a></li>
 </ul>

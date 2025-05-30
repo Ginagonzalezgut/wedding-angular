@@ -4,6 +4,15 @@
   gap: 24px;
   align-items: center;
 
+  a {
+    border-bottom: 2px solid var(--text-color);
+    transition: all 0.3s ease;
+  }
+
+  a:hover,
+  a.active {
+    border-bottom: 2px solid var(--text-color-light);
+  }
   &--column {
     flex-direction: column;
   }
