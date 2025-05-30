@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ButtonComponent } from '../button/button.component';
+
+
 
 @Component({
   selector: 'hero',
@@ -8,5 +10,12 @@ import { ButtonComponent } from '../button/button.component';
   styleUrl: './hero.component.scss'
 })
 export class HeroComponent {
-
+@Input() borderOn = true;
+@Input() title = "";
+@Input() subtitle = "";
+@Input() buttonDisplay=false;
 }
+
+
+
+// UN BOTON QUE APREZCA O NO 

@@ -6,7 +6,7 @@
   line-height: 1.4;
   padding-block: 12px;
   padding-inline: 32px;
-  transition: all 0.2s linear;
+  transition: all 0.3s ease, color 0.3s ease, transform 0.3s ease;
 
   &:hover {
     background-color: var(--background-color-dark);

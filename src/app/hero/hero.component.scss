@@ -7,6 +7,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 
   &__title {
     font-family: var(--hero-font);
@@ -14,6 +15,7 @@
     font-size: 72px;
     letter-spacing: 6px;
     line-height: 1.2;
+    text-transform: uppercase;
   }
   &__subtitle {
     font-size: 24px;
@@ -24,4 +26,8 @@
     text-transform: capitalize;
     margin-bottom: 32px;
   }
+}
+.border-on {
+  border: 1px solid var(--text-color-light);
+  padding: 108px;
 }
