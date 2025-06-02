@@ -5,3 +5,9 @@
   width: 100%;
   background-image: url("/city-images/marimonda.jpg");
 }
+
+.city-page__hotels {
+  display: block;
+  padding: 32px 0;
+  background-color: var(--background-color-grey);
+}

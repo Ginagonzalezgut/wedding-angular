@@ -27,25 +27,30 @@
     </div>
   </div>
 </div>
-<div class="container">
-  <div class="row">
-    <div class="col-4">
-      <hotel-card
-        imageName="hotel-el-prado-x2"
-        title="Hotel El Prado"
-        [discount]="true"
-      />
-    </div>
-    <div class="col-4">
-      <hotel-card
-        imageName="hotel-dann-carlton-x2"
-        title="Hotel Dann Carlton"
-      />
-    </div>
-    <div class="col-4">
-      <hotel-card imageName="hotel-movich-buro-x2" title="Hotel Movich Buró" />
+<card title="Hoteles" icon="hotel" [compact]="true" class="city-page__hotels">
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <hotel-card
+          imageName="hotel-el-prado-x2"
+          title="Hotel El Prado"
+          [discount]="true"
+        />
+      </div>
+      <div class="col-4">
+        <hotel-card
+          imageName="hotel-dann-carlton-x2"
+          title="Hotel Dann Carlton"
+        />
+      </div>
+      <div class="col-4">
+        <hotel-card
+          imageName="hotel-movich-buro-x2"
+          title="Hotel Movich Buró"
+        />
+      </div>
     </div>
   </div>
-</div>
+</card>
 
 <app-footer />
