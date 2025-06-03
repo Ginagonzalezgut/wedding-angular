@@ -37,7 +37,16 @@
   </div>
 </card>
 
-<div class="container">
+<div class="spots-section container m-80">
+  <div class="col-8 offset-2">
+    <icon name="caiman" />
+    <h2>NUESTROS RECOMENDADOS EN BARRANQUILLA</h2>
+    <p class="spots-section__subtitle">
+      Prepárense para descubrir su música, su gastronomía y ese espíritu festivo
+      que hace de Barranquilla un destino inolvidable.
+    </p>
+  </div>
+
   @for (touristSpot of touristSpots; track touristSpot.name) {
   <tourist-spots [touristSpot]="touristSpot" />
   }

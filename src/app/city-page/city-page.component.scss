@@ -11,3 +11,16 @@
   padding: 32px 0;
   background-color: var(--background-color-grey);
 }
+
+.spots-section {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: center;
+
+  &__subtitle {
+    max-width: 585px;
+    margin: auto;
+  }
+}

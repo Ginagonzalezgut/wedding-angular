@@ -6,6 +6,7 @@ import { HotelCardComponent } from '../hotel-card/hotel-card.component';
 import HotelType from '../types/Hotel';
 import { TouristSpotsComponent } from '../tourist-spots/tourist-spots.component';
 import TouristSpot from '../types/TouristSpot';
+import { IconComponent } from '../icon/icon.component';
 
 @Component({
   selector: 'app-city-page',
@@ -15,6 +16,7 @@ import TouristSpot from '../types/TouristSpot';
     CardComponent,
     HotelCardComponent,
     TouristSpotsComponent,
+    IconComponent,
   ],
   templateUrl: './city-page.component.html',
   styleUrl: './city-page.component.scss',
@@ -44,7 +46,7 @@ export class CityPageComponent {
     { imageSpot: 'cienaga-de-mallorquin', name: 'CIÉNAGA DE MALLORQUÍN' },
     { imageSpot: 'museo-del-carnaval', name: 'MUSEO DEL CARNAVAL' },
     { imageSpot: 'malecon-del-rio', name: 'MALECÓN DEL RÍO' },
-    { imageSpot: 'muelle-188', name: 'MUELLE 1888' },
+    { imageSpot: 'muelle-1888', name: 'MUELLE 1888' },
     { imageSpot: 'ventana-del-mundo', name: 'VENTANA DEL MUNDO' },
     { imageSpot: 'estatua-de-shakira', name: 'ESTATUA DE SHAKIRA' },
     { imageSpot: 'volcan-del-totumo', name: 'VOLCÁN DEL TOTUMO' },
