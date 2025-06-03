@@ -1,4 +1,4 @@
-export default interface TouristSpot{
-  imageSpot:string,
-  name:string,
+export interface TouristSpot {
+  imageSpot: string;
+  name: string;
 }

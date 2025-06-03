@@ -52,4 +52,15 @@
   }
 </div>
 
+<div class="container m-80">
+  <div class="row">
+    @for (visitorInformation of visitorsInformation; track
+    visitorInformation.title) {
+    <div class="col-4">
+      <visitor-information [visitorInformation]="visitorInformation" />
+    </div>
+    }
+  </div>
+</div>
+
 <app-footer />

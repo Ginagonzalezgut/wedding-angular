@@ -1,6 +1,6 @@
-export default interface HotelType{
-  title:string;
-  imageName:string;
-  alt:string;
-  discount:boolean;
-};
+export interface HotelType {
+  title: string;
+  imageName: string;
+  alt: string;
+  discount: boolean;
+}

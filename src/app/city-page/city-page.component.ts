@@ -3,10 +3,12 @@ import { HeroComponent } from '../hero/hero.component';
 import { FooterComponent } from '../footer/footer.component';
 import { CardComponent } from '../card/card.component';
 import { HotelCardComponent } from '../hotel-card/hotel-card.component';
-import HotelType from '../types/Hotel';
 import { TouristSpotsComponent } from '../tourist-spots/tourist-spots.component';
-import TouristSpot from '../types/TouristSpot';
 import { IconComponent } from '../icon/icon.component';
+import { VisitorInformationComponent } from '../visitor-information/visitor-information.component';
+import { HotelType } from '../types/Hotel';
+import { TouristSpot } from '../types/TouristSpot';
+import { VisitorInformation } from '../types/VisitorInformation';
 
 @Component({
   selector: 'app-city-page',
@@ -17,6 +19,7 @@ import { IconComponent } from '../icon/icon.component';
     HotelCardComponent,
     TouristSpotsComponent,
     IconComponent,
+    VisitorInformationComponent,
   ],
   templateUrl: './city-page.component.html',
   styleUrl: './city-page.component.scss',
@@ -51,5 +54,37 @@ export class CityPageComponent {
     { imageSpot: 'estatua-de-shakira', name: 'ESTATUA DE SHAKIRA' },
     { imageSpot: 'volcan-del-totumo', name: 'VOLCÁN DEL TOTUMO' },
     { imageSpot: 'puerto-mocho', name: 'PUERTO MOCHO' },
+  ];
+  visitorsInformation: VisitorInformation[] = [
+    {
+      icon: 'transportation',
+      title: 'TRANSPORTE',
+      text: 'Barranquilla cuenta con un Sistema Integrado de Transporte.',
+    },
+    {
+      icon: 'dish',
+      title: 'PLATOS TÍPICOS',
+      text: 'Una amplia oferta gastronómica que refleja la diversidad cultural de la ciudad.',
+    },
+    {
+      icon: 'money',
+      title: 'MONEDA',
+      text: 'La moneda oficial de Colombia es el peso colombiano (COP).',
+    },
+    {
+      icon: 'wheather',
+      title: 'CLIMA',
+      text: 'Barranquilla tiene una temperatura promedio de 27,4 °C.',
+    },
+    {
+      icon: 'suitcase',
+      title: 'DESTINOS CERCANOS',
+      text: 'Cartagena, Santa Marta, Parque Tayrona, entre otros.',
+    },
+    {
+      icon: 'segurity',
+      title: 'SEGURIDAD',
+      text: 'Con unas cuantas precauciones básicas podrás disfrutar al máximo de la ciudad.',
+    },
   ];
 }
