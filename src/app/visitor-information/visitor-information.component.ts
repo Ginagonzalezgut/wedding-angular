@@ -5,7 +5,7 @@ import { IconComponent } from '../icon/icon.component';
 
 @Component({
   selector: 'visitor-information',
-  imports: [ButtonComponent],
+  imports: [ButtonComponent, IconComponent],
   templateUrl: './visitor-information.component.html',
   styleUrl: './visitor-information.component.scss',
 })

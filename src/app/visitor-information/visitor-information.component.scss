@@ -1,12 +1,11 @@
 .information {
-  height: 292px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   gap: 24px;
-  background-color: var(--background-color-light);
+  background-color: var(--background-color);
   padding: 32px 48px;
 
   &__text {

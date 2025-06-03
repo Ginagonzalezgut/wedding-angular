@@ -38,28 +38,37 @@
 </card>
 
 <div class="spots-section container m-80">
-  <div class="col-8 offset-2">
+  <div class="section-header">
     <icon name="caiman" />
-    <h2>NUESTROS RECOMENDADOS EN BARRANQUILLA</h2>
+    <h2 class="m-0">NUESTROS RECOMENDADOS EN BARRANQUILLA</h2>
     <p class="spots-section__subtitle">
       Prepárense para descubrir su música, su gastronomía y ese espíritu festivo
       que hace de Barranquilla un destino inolvidable.
     </p>
   </div>
 
-  @for (touristSpot of touristSpots; track touristSpot.name) {
-  <tourist-spots [touristSpot]="touristSpot" />
-  }
+  <div>
+    @for (touristSpot of touristSpots; track touristSpot.name) {
+    <tourist-spots [touristSpot]="touristSpot" />
+    }
+  </div>
 </div>
 
-<div class="container m-80">
-  <div class="row">
-    @for (visitorInformation of visitorsInformation; track
-    visitorInformation.title) {
-    <div class="col-4">
-      <visitor-information [visitorInformation]="visitorInformation" />
+<div class="info-section py-80">
+  <div class="container">
+    <div class="section-header mb-80">
+      <icon name="information" />
+      <h2 class="m-0">INFORMACIÓN DE INTERES</h2>
     </div>
-    }
+
+    <div class="row row-gap-80">
+      @for (visitorInformation of visitorsInformation; track
+      visitorInformation.title) {
+      <div class="col-4">
+        <visitor-information [visitorInformation]="visitorInformation" />
+      </div>
+      }
+    </div>
   </div>
 </div>
 

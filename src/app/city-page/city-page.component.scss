@@ -12,15 +12,26 @@
   background-color: var(--background-color-grey);
 }
 
-.spots-section {
-  background-color: var(--background-color);
+.section-header {
+  align-items: center;
   display: flex;
   flex-direction: column;
   gap: 24px;
   text-align: center;
+}
+
+.spots-section {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 
   &__subtitle {
     max-width: 585px;
     margin: auto;
   }
+}
+
+.info-section {
+  background-color: var(--background-color-grey);
 }
