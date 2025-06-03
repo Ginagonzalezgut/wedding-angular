@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { ButtonComponent } from '../button/button.component';
+import HotelType from '../types/Hotel';
 
 @Component({
   selector: 'hotel-card',
@@ -8,8 +9,10 @@ import { ButtonComponent } from '../button/button.component';
   styleUrl: './hotel-card.component.scss'
 })
 export class HotelCardComponent {
-@Input() title="";
-@Input() imageName="";
-@Input() alt="";
-@Input() discount=false;
+@Input() hotel: HotelType = {
+  title:"",
+  imageName:"",
+  alt:"",
+  discount:false,
+};
 }

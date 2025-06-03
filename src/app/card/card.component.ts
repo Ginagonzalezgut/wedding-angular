@@ -9,8 +9,8 @@ import { IconComponent } from '../icon/icon.component';
   styleUrl: './card.component.scss'
 })
 export class CardComponent {
-  @Input() title = "";
-  @Input() buttonLabel="";
-  @Input() icon="";
+  @Input() title:string = "";
+  @Input() buttonLabel:string="";
+  @Input() icon:string="";
   @Input() compact: boolean=false;
 }

@@ -7,6 +7,6 @@ import { Component, Input } from '@angular/core';
   styleUrl: './button.component.scss'
 })
 export class ButtonComponent {
-  @Input() isDark = false;
-  @Input() onDark = false;
+  @Input() isDark: boolean = false;
+  @Input() onDark: boolean = false;
 }

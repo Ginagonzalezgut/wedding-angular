@@ -1,14 +1,14 @@
 <div class="hotel-card">
   <img
     class="hotel-card__image"
-    src="/city-images/{{ imageName }}.jpg"
-    alt="{{ alt }}"
-  />@if(discount){
+    src="/city-images/{{ hotel.imageName }}.jpg"
+    alt="{{ hotel.alt }}"
+  />@if(hotel.discount){
   <p class="hotel-card__discount">DESCUENTO DE 15% PARA INVITADOS A LA BODA</p>
   }
 
   <div class="hotel-card__information">
-    <p>{{ title }}</p>
+    <p>{{ hotel.title }}</p>
     <app-button>Reservar</app-button>
   </div>
 </div>

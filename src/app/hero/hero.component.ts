@@ -8,9 +8,9 @@ import { ButtonComponent } from '../button/button.component';
   styleUrl: './hero.component.scss'
 })
 export class HeroComponent {
-@Input() borderOn = true;
-@Input() title = "";
-@Input() subtitle = "";
-@Input() buttonDisplay=false;
-@Input() backgroundImage="";
+@Input() borderOn:boolean= true;
+@Input() title:string = "";
+@Input() subtitle:string = "";
+@Input() buttonDisplay:boolean=false;
+@Input() backgroundImage:string="";
 }
