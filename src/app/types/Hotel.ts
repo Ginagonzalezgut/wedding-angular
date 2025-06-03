@@ -3,4 +3,4 @@ export default interface HotelType{
   imageName:string;
   alt:string;
   discount:boolean;
-}
+};

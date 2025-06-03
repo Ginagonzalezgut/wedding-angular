@@ -30,17 +30,17 @@
 <card title="Hoteles" icon="hotel" [compact]="true" class="city-page__hotels">
   <div class="container">
     <div class="row">
-      <div class="col-4">
-        <hotel-card [hotel]="hotel1" />
-      </div>
-      <div class="col-4">
-        <hotel-card [hotel]="hotel2" />
-      </div>
-      <div class="col-4">
-        <hotel-card [hotel]="hotel3" />
-      </div>
+      @for (hotel of hoteles; track hotel.title) {
+      <div class="col-4"><hotel-card [hotel]="hotel" /></div>
+      }
     </div>
   </div>
 </card>
+
+<div class="container">
+  @for (touristSpot of touristSpots; track touristSpot.name) {
+  <tourist-spots [touristSpot]="touristSpot" />
+  }
+</div>
 
 <app-footer />
