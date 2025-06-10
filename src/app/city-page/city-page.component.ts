@@ -9,6 +9,8 @@ import { VisitorInformationComponent } from '../visitor-information/visitor-info
 import { HotelType } from '../types/Hotel';
 import { TouristSpot } from '../types/TouristSpot';
 import { VisitorInformation } from '../types/VisitorInformation';
+import { PopUp } from '../types/PopUp';
+import { PopUpComponent } from '../pop-up/pop-up.component';
 
 @Component({
   selector: 'app-city-page',
@@ -20,6 +22,7 @@ import { VisitorInformation } from '../types/VisitorInformation';
     TouristSpotsComponent,
     IconComponent,
     VisitorInformationComponent,
+    PopUpComponent,
   ],
   templateUrl: './city-page.component.html',
   styleUrl: './city-page.component.scss',
@@ -85,6 +88,15 @@ export class CityPageComponent {
       icon: 'segurity',
       title: 'SEGURIDAD',
       text: 'Con unas cuantas precauciones básicas podrás disfrutar al máximo de la ciudad.',
+    },
+  ];
+  popUps: PopUp[] = [
+    {
+      title: 'TRANSPORTE',
+      icon: 'transportation',
+      subtitle: 'Transmetro',
+      description:
+        'Es el sistema de transporte público masivo de buses articulados.',
     },
   ];
 }

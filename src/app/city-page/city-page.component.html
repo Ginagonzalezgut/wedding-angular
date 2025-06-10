@@ -71,5 +71,9 @@
     </div>
   </div>
 </div>
+<div>
+  @for (popUp of popUps; track popUp.title) {<pop-up [popUp]="popUp" />
+  }
+</div>
 
 <app-footer />
