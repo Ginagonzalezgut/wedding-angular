@@ -92,11 +92,16 @@ export class CityPageComponent {
   ];
   popUps: PopUp[] = [
     {
+      image: 'empanadas',
       title: 'TRANSPORTE',
       icon: 'transportation',
-      subtitle: 'Transmetro',
-      description:
-        'Es el sistema de transporte público masivo de buses articulados.',
+      content: [
+        {
+          subtitle: 'Transmetro',
+          description:
+            'Es el sistema de transporte público masivo de buses articulados.',
+        },
+      ],
     },
   ];
 }

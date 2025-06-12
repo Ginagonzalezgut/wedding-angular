@@ -1,8 +1,15 @@
-<div>
-  <div>
-    <img src="/icons/{{ popUp.icon }}.svg" alt="" />
-    <h2>{{ popUp.title }}</h2>
+<div class="pop-up">
+  <div><img src="/city-images/{{ popUp.image }}.jpg" alt="" /></div>
+  <div class="pop-up__card">
+    <div class="pop-up__heading">
+      <icon [name]="popUp.icon" />
+      <h3>{{ popUp.title }}</h3>
+    </div>
+    @for (item of popUp.content; track $index) {
+    <h3 class="pop-up__subtitle">{{ item.subtitle }}</h3>
+    <ul class="pop-up__description">
+      <li>{{ item.description }}</li>
+    </ul>
+    }
   </div>
-  <h3>{{ popUp.subtitle }}</h3>
-  <p>{{ popUp.description }}</p>
 </div>
