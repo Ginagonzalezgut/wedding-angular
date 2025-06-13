@@ -240,11 +240,79 @@ export class CityPageComponent {
       icon: 'suitcase',
       title: 'DESTINOS CERCANOS',
       text: 'Cartagena, Santa Marta, Parque Tayrona, entre otros.',
+      popup: {
+        image: 'destinos-cercanos',
+        title: 'destinos cercanos',
+        icon: 'suitcase',
+        content: [
+          {
+            subtitle: 'Cartagena de Indias (2 h 30 min)',
+            description: [
+              'Qué ver: Ciudad amurallada, Getsemaní, playas urbanas, castillo San Felipe.',
+              'Ideal para: Turismo cultural, compras, gastronomía, historia y vida nocturna.',
+              'Consejo: Puedes ir y volver en el día, pero lo ideal es quedarse al menos una noche. ',
+            ],
+          },
+          {
+            subtitle: ' Islas del Rosario (desde Cartagena – 45 min en lancha)',
+            description: [
+              'Qué ver: Archipiélago con playas de agua cristalina, arrecifes de coral.',
+              'Ideal para: Snorkel, relax, excursiones de un día o dormir en una isla.',
+              'Consejo: Puedes tomar un tour desde Cartagena que incluya transporte, almuerzo y actividades acuáticas. Las islas más visitadas son Isla Barú, Isla Grande, Isla del Encanto y Cholón.',
+            ],
+          },
+          {
+            subtitle: ' Santa Marta y Parque Tayrona (2 h – 3 h)',
+            description: [
+              'Qué ver: Bahía Concha, Playa Cristal, Cabo San Juan (dentro del Parque).',
+              'Ideal para: Naturaleza, senderismo, playas paradisíacas.',
+              'Consejo: Lleva calzado cómodo y reserva entrada si vas al Tayrona.',
+            ],
+          },
+        ],
+      },
     },
     {
       icon: 'segurity',
       title: 'SEGURIDAD',
       text: 'Con unas cuantas precauciones básicas podrás disfrutar al máximo de la ciudad.',
+      popup: {
+        image: 'segurity',
+        title: 'seguridad',
+        icon: 'segurity',
+        content: [
+          {
+            subtitle: 'Evita zonas poco concurridas de noche',
+            description: [
+              ' Aunque muchas zonas son seguras, es mejor no caminar solo por calles solas o poco iluminadas, especialmente en barrios no turísticos.',
+            ],
+          },
+          {
+            subtitle: 'Usa transporte confiable',
+            description: [
+              ' Prefiere taxis solicitados por apps (como DiDi o InDriver) o desde el hotel. Evita tomar taxis en la calle.',
+            ],
+          },
+          {
+            subtitle: 'Lleva solo lo necesario',
+            description: [
+              ' No cargues grandes cantidades de dinero ni objetos de valor (joyas, cámaras costosas, etc.) al salir. Usa una riñonera o bolso cruzado seguro.',
+            ],
+          },
+          {
+            subtitle: 'Consulta con los locales o el hotel',
+            description: [
+              ' Pregunta en tu alojamiento qué zonas son seguras para visitar y si hay sectores que deberías evitar. ',
+            ],
+          },
+          {
+            subtitle: 'Evita mostrar tu móvil en la calle constantemente',
+            description: [
+              ' Aunque común en muchas ciudades, es mejor usarlo con discreción para evitar robos.',
+            ],
+          },
+        ],
+      },
     },
   ];
 }
