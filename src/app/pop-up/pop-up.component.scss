@@ -2,19 +2,22 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  // width: 1000px;
-  // height: 706px;
   margin: auto;
 
   &__card {
-    padding: 80px;
+    padding: 60px 0;
     display: flex;
     flex-direction: column;
     justify-content: start;
   }
+  &__content {
+    padding: 0 80px;
+    height: 580px;
+    overflow: scroll;
+  }
   &__image {
     flex-shrink: 0;
-    width: 300px;
+    width: 350px;
 
     img {
       object-fit: cover;
@@ -32,6 +35,10 @@
   &__item {
     margin-bottom: 2rem;
     text-align: left;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
   &__subtitle {
     text-transform: uppercase;
@@ -43,5 +50,13 @@
   &__description {
     list-style-type: disc;
     padding-left: 1.25rem;
+
+    li {
+      margin-bottom: 8px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 }

@@ -8,26 +8,29 @@
   [style]="styles"
   [showHeader]="false"
   [contentStyle]="{ padding: 0, }"
+  [dismissableMask]="true"
 >
   <div class="pop-up">
     <div class="pop-up__image">
       <img src="/city-images/{{ popUp.image }}.jpg" alt="" />
     </div>
     <div class="pop-up__card">
-      <div class="pop-up__heading">
-        <icon [name]="popUp.icon" />
-        <h3>{{ popUp.title }}</h3>
+      <div class="pop-up__content">
+        <div class="pop-up__heading">
+          <icon [name]="popUp.icon" />
+          <h3>{{ popUp.title }}</h3>
+        </div>
+        @for (item of popUp.content; track $index) {
+        <div class="pop-up__item">
+          <h3 class="pop-up__subtitle">{{ item.subtitle }}</h3>
+          <ul class="pop-up__description">
+            @for (descriptionItem of item.description; track $index) {
+            <li>{{ descriptionItem }}</li>
+            }
+          </ul>
+        </div>
+        }
       </div>
-      @for (item of popUp.content; track $index) {
-      <div class="pop-up__item">
-        <h3 class="pop-up__subtitle">{{ item.subtitle }}</h3>
-        <ul class="pop-up__description">
-          @for (descriptionItem of item.description; track $index) {
-          <li>{{ descriptionItem }}</li>
-          }
-        </ul>
-      </div>
-      }
     </div>
   </div>
 </p-dialog>

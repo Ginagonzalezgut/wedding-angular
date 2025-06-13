@@ -100,16 +100,141 @@ export class CityPageComponent {
       icon: 'dish',
       title: 'PLATOS TÍPICOS',
       text: 'Una amplia oferta gastronómica que refleja la diversidad cultural de la ciudad.',
+      popup: {
+        image: 'empanadas',
+        title: 'PLATOS TÍPICOS',
+        icon: 'dish',
+        content: [
+          {
+            subtitle: 'Mote de queso',
+            description: [
+              'Sopa espesa y cremosa hecha con ñame, queso costeño y suero. Tradicional y reconfortante.',
+            ],
+          },
+          {
+            subtitle: 'Butifarra Soledeña',
+            description: [
+              'Delicioso embutido pequeño, seco y especiado, originario del municipio vecino de Soledad.',
+            ],
+          },
+          {
+            subtitle: 'Arepa de huevo',
+            description: [
+              'Arepa dorada y crujiente, rellena con huevo y, a veces, carne molida. Ideal como desayuno o snack callejero.',
+            ],
+          },
+          {
+            subtitle: 'Bollo limpio o bollo de yuca/mazorca',
+            description: [
+              'Masa de maíz o yuca cocida en hoja, un acompañante típico en platos costeños.',
+            ],
+          },
+          {
+            subtitle: 'Sancocho de guandú con carne salada',
+            description: [
+              'Caldo espeso preparado con guandú (legumbre), carne salada, plátano y yuca.',
+            ],
+          },
+          {
+            subtitle: 'Carimañola',
+            description: [
+              'Fritura hecha de masa de yuca rellena de carne molida o queso. Crujiente por fuera y suave por dentro.',
+            ],
+          },
+          {
+            subtitle: 'Chicharrón con yuca',
+            description: [
+              'Tiras de cerdo fritas, crocantes y sabrosas, servidas con yuca cocida o frita.',
+            ],
+          },
+          {
+            subtitle: 'Pescado frito acompañada de arroz con coco y patacones',
+            description: ['Pargo o mojarra, típico en la costa Caribe.'],
+          },
+        ],
+      },
     },
     {
       icon: 'money',
       title: 'MONEDA',
       text: 'La moneda oficial de Colombia es el peso colombiano (COP).',
+      popup: {
+        image: 'moneda',
+        title: 'MONEDA',
+        icon: 'money',
+        content: [
+          {
+            subtitle: 'Lleva efectivo en pesos colombianos',
+            description: [
+              'En la mayoría de pequeños comercios, puestos callejeros, taxis y tiendas locales solo se acepta efectivo.',
+            ],
+          },
+          {
+            subtitle: 'Tarjetas sí, pero no en todas partes',
+            description: [
+              'Las tarjetas de crédito y débito son aceptadas principalmente en hoteles, centros comerciales, supermercados y restaurantes de cadena. ',
+              'Lugares más pequeños o informales pueden no tener datáfono (máquina para tarjetas).',
+            ],
+          },
+          {
+            subtitle: 'Cambia dinero en casas de cambio confiables',
+            description: [
+              'Evita cambiar en la calle o con personas no autorizadas.',
+              'También puedes retirar pesos desde cajeros automáticos con tu tarjeta internacional, aunque puede aplicarse una comisión.',
+            ],
+          },
+          {
+            subtitle: 'Confirma precios antes de pagar',
+            description: [
+              'Especialmente en taxis, mercados o comercios sin precios visibles. Pregunta cuánto cuesta antes de consumir o comprar.',
+            ],
+          },
+        ],
+      },
     },
     {
       icon: 'wheather',
       title: 'CLIMA',
       text: 'Barranquilla tiene una temperatura promedio de 27,4 °C.',
+      popup: {
+        image: 'wheather',
+        title: 'clima',
+        icon: 'wheather',
+        content: [
+          {
+            subtitle: 'Prepárate para el calor y la humedad',
+            description: [
+              'Las temperaturas suelen oscilar entre 28°C y 35°C, con alta humedad.',
+              'Viste ropa ligera, de colores claros y telas transpirables como algodón o lino.',
+            ],
+          },
+          {
+            subtitle: 'Usa protector solar todos los días',
+            description: [
+              'El sol es fuerte, incluso en días nublados.',
+              'Lleva gafas de sol, gorra o sombrero y protector solar de SPF 30 o más.',
+            ],
+          },
+          {
+            subtitle: 'Mantente hidratado',
+            description: [
+              'Lleva siempre una botella de agua, sobre todo si vas a hacer turismo al aire libre.',
+            ],
+          },
+          {
+            subtitle: 'El aire acondicionado es común, pero puede ser fuerte',
+            description: [
+              'En hoteles, centros comerciales y transporte suele haber aire muy frío. ',
+            ],
+          },
+          {
+            subtitle: 'Evita las horas de más calor (12:00 a 15:00)',
+            description: [
+              'Si puedes, programa actividades al aire libre por la mañana temprano o al final de la tarde.',
+            ],
+          },
+        ],
+      },
     },
     {
       icon: 'suitcase',
