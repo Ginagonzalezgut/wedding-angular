@@ -47,11 +47,11 @@
     </p>
   </div>
 
-  <div>
-    @for (touristSpot of touristSpots; track touristSpot.name) {
-    <tourist-spots [touristSpot]="touristSpot" />
-    }
-  </div>
+  <p-carousel [value]="touristSpots" [numVisible]="3" [numScroll]="1">
+    <ng-template pTemplate="item" let-touristSpot>
+      <tourist-spots [touristSpot]="touristSpot"></tourist-spots>
+    </ng-template>
+  </p-carousel>
 </div>
 
 <div class="info-section py-80">
@@ -70,10 +70,6 @@
       }
     </div>
   </div>
-</div>
-<div>
-  @for (popUp of popUps; track popUp.title) {<pop-up [popUp]="popUp" />
-  }
 </div>
 
 <app-footer />

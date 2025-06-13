@@ -1,15 +1,33 @@
-<div class="pop-up">
-  <div><img src="/city-images/{{ popUp.image }}.jpg" alt="" /></div>
-  <div class="pop-up__card">
-    <div class="pop-up__heading">
-      <icon [name]="popUp.icon" />
-      <h3>{{ popUp.title }}</h3>
+<app-button [isDark]="true" (click)="visible = true">
+  Más información
+</app-button>
+
+<p-dialog
+  [modal]="true"
+  [(visible)]="visible"
+  [style]="styles"
+  [showHeader]="false"
+  [contentStyle]="{ padding: 0, }"
+>
+  <div class="pop-up">
+    <div class="pop-up__image">
+      <img src="/city-images/{{ popUp.image }}.jpg" alt="" />
     </div>
-    @for (item of popUp.content; track $index) {
-    <h3 class="pop-up__subtitle">{{ item.subtitle }}</h3>
-    <ul class="pop-up__description">
-      <li>{{ item.description }}</li>
-    </ul>
-    }
+    <div class="pop-up__card">
+      <div class="pop-up__heading">
+        <icon [name]="popUp.icon" />
+        <h3>{{ popUp.title }}</h3>
+      </div>
+      @for (item of popUp.content; track $index) {
+      <div class="pop-up__item">
+        <h3 class="pop-up__subtitle">{{ item.subtitle }}</h3>
+        <ul class="pop-up__description">
+          @for (descriptionItem of item.description; track $index) {
+          <li>{{ descriptionItem }}</li>
+          }
+        </ul>
+      </div>
+      }
+    </div>
   </div>
-</div>
+</p-dialog>

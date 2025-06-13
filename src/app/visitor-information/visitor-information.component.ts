@@ -1,18 +1,26 @@
 import { Component, Input } from '@angular/core';
-import { ButtonComponent } from '../button/button.component';
 import { VisitorInformation } from '../types/VisitorInformation';
 import { IconComponent } from '../icon/icon.component';
+import { PopUpComponent } from '../pop-up/pop-up.component';
 
 @Component({
   selector: 'visitor-information',
-  imports: [ButtonComponent, IconComponent],
+  imports: [IconComponent, PopUpComponent],
   templateUrl: './visitor-information.component.html',
   styleUrl: './visitor-information.component.scss',
 })
 export class VisitorInformationComponent {
+  isPopupOpen = false;
+
   @Input() visitorInformation: VisitorInformation = {
     icon: '',
     title: '',
     text: '',
+    popup: {
+      content: [],
+      icon: '',
+      image: '',
+      title: '',
+    },
   };
 }

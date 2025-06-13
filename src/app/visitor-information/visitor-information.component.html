@@ -3,5 +3,7 @@
 
   <h3>{{ visitorInformation.title }}</h3>
   <p class="information__text">{{ visitorInformation.text }}</p>
-  <app-button [isDark]="true">Más información</app-button>
+  @if (visitorInformation.popup) {
+  <pop-up [popUp]="visitorInformation.popup"></pop-up>
+  }
 </div>
