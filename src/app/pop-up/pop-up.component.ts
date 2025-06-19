@@ -13,7 +13,7 @@ import { ButtonComponent } from '../button/button.component';
 export class PopUpComponent {
   visible = false;
   styles = {
-    width: '1000px',
+    width: '1150px',
     height: '700px',
     border: 'none',
     borderRadius: 0,
