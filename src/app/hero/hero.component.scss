@@ -1,3 +1,5 @@
+@use "../../scss/mixins.scss" as *;
+
 .hero {
   background-size: cover;
   background-attachment: fixed;
@@ -11,12 +13,7 @@
   transition: all 1s linear;
 
   &__title {
-    font-family: var(--hero-font);
-    font-weight: 400;
-    font-size: 72px;
-    letter-spacing: 6px;
-    line-height: 1.2;
-    text-transform: uppercase;
+    @include hero-title;
   }
   &__subtitle {
     font-size: 24px;

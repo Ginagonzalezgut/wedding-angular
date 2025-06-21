@@ -1,0 +1,16 @@
+@use "../../scss/mixins.scss" as *;
+
+.hero {
+  background-image: url(/faq-images/background-faq.jpg);
+  background-size: 1000px 423px;
+  height: 635px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 68px;
+  @include center;
+}
+.title {
+  @include hero-title;
+  max-width: 798px;
+  text-align: center;
+}
