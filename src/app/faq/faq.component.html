@@ -2,4 +2,20 @@
   <div class="hero">
     <h1 class="title">Preguntas frecuentes</h1>
   </div>
+  <div class="groups container m-80">
+    @for (group of groups; track group.title) {
+    <div class="group">
+      <h2 class="col-3 group__title">{{ group.title }}</h2>
+      <div class="col-7 offset-2 group__items">
+        @for (qa of group.items ; track $index) {
+        <div>
+          <h3 class="group__question">{{ qa.question }}</h3>
+          <p class="group__answer">{{ qa.answer }}</p>
+        </div>
+        }
+      </div>
+    </div>
+    }
+  </div>
+  <app-footer></app-footer>
 </div>
