@@ -1,16 +1,17 @@
 import { Component, Input } from '@angular/core';
-import { ButtonComponent } from '../button/button.component';
 import { IconComponent } from '../icon/icon.component';
+import { LinkComponent } from '../link/link.component';
 
 @Component({
   selector: 'card',
-  imports: [ButtonComponent,IconComponent],
+  imports: [LinkComponent, IconComponent],
   templateUrl: './card.component.html',
-  styleUrl: './card.component.scss'
+  styleUrl: './card.component.scss',
 })
 export class CardComponent {
-  @Input() title:string = "";
-  @Input() buttonLabel:string="";
-  @Input() icon:string="";
-  @Input() compact: boolean=false;
+  @Input() title: string = '';
+  @Input() buttonLabel: string = '';
+  @Input() icon: string = '';
+  @Input() compact: boolean = false;
+  @Input() href: string = '';
 }

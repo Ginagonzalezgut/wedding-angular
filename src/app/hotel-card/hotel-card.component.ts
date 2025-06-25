@@ -1,10 +1,10 @@
 import { Component, Input } from '@angular/core';
-import { ButtonComponent } from '../button/button.component';
 import { HotelType } from '../types/Hotel';
+import { LinkComponent } from '../link/link.component';
 
 @Component({
   selector: 'hotel-card',
-  imports: [ButtonComponent],
+  imports: [LinkComponent],
   templateUrl: './hotel-card.component.html',
   styleUrl: './hotel-card.component.scss',
 })
@@ -14,5 +14,6 @@ export class HotelCardComponent {
     imageName: '',
     alt: '',
     discount: false,
+    url: '',
   };
 }

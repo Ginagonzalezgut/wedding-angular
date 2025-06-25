@@ -35,18 +35,21 @@ export class CityPageComponent {
       title: 'Hotel El Prado',
       alt: 'Vista de la piscina y arquitectura colonial del emblemático Hotel El Prado en Barranquilla, rodeado de palmeras',
       discount: true,
+      url: 'https://www.hotelelpradobarranquilla.com/',
     },
     {
       imageName: 'hotel-dann-carlton-x2',
       title: 'Hotel Dann Carlton',
       alt: 'Piscina del Hotel Dann Carlton con tumbonas, jacuzzi y terraza con mesas en una zona moderna',
       discount: false,
+      url: 'https://www.danncarltonbaq.co/',
     },
     {
       imageName: 'hotel-movich-buro-x2',
       title: 'Hotel Movich Buró',
       alt: 'Piscina exterior del Hotel Movich Buró Barranquilla al atardecer, junto a un moderno edificio con diseño minimalista',
       discount: false,
+      url: 'https://www.movichhotels.com/es/hotel-buro51-en-barranquilla/',
     },
   ];
   touristSpots: TouristSpot[] = [

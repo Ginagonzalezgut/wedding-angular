@@ -3,4 +3,5 @@ export interface HotelType {
   imageName: string;
   alt: string;
   discount: boolean;
+  url: string;
 }
