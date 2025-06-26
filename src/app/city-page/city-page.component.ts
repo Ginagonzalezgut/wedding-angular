@@ -1,4 +1,4 @@
-import { Component, Input, input } from '@angular/core';
+import { Component } from '@angular/core';
 import { HeroComponent } from '../hero/hero.component';
 import { FooterComponent } from '../footer/footer.component';
 import { CardComponent } from '../card/card.component';
@@ -68,7 +68,7 @@ export class CityPageComponent {
       title: 'TRANSPORTE',
       text: 'Barranquilla cuenta con un Sistema Integrado de Transporte.',
       popup: {
-        image: 'empanadas',
+        image: 'transporte-2',
         title: 'TRANSPORTE',
         icon: 'transportation',
         content: [
@@ -104,7 +104,7 @@ export class CityPageComponent {
       title: 'PLATOS TÍPICOS',
       text: 'Una amplia oferta gastronómica que refleja la diversidad cultural de la ciudad.',
       popup: {
-        image: 'empanadas',
+        image: 'food',
         title: 'PLATOS TÍPICOS',
         icon: 'dish',
         content: [
@@ -200,7 +200,7 @@ export class CityPageComponent {
       title: 'CLIMA',
       text: 'Barranquilla tiene una temperatura promedio de 27,4 °C.',
       popup: {
-        image: 'wheather',
+        image: 'clima',
         title: 'clima',
         icon: 'wheather',
         content: [
@@ -280,7 +280,7 @@ export class CityPageComponent {
       title: 'SEGURIDAD',
       text: 'Con unas cuantas precauciones básicas podrás disfrutar al máximo de la ciudad.',
       popup: {
-        image: 'segurity',
+        image: 'seguridad',
         title: 'seguridad',
         icon: 'segurity',
         content: [

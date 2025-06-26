@@ -38,7 +38,7 @@
   </div>
 </card>
 
-<div class="spots-section container m-80">
+<div class="spots-section my-80">
   <div class="section-header">
     <icon name="caiman" />
     <h2 class="m-0">NUESTROS RECOMENDADOS EN BARRANQUILLA</h2>
@@ -48,7 +48,7 @@
     </p>
   </div>
 
-  <p-carousel [value]="touristSpots" [numVisible]="3" [numScroll]="1">
+  <p-carousel [value]="touristSpots" [numVisible]="4" [numScroll]="1">
     <ng-template pTemplate="item" let-touristSpot>
       <tourist-spots [touristSpot]="touristSpot"></tourist-spots>
     </ng-template>
