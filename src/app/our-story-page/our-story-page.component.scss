@@ -1,0 +1,15 @@
+.our-story {
+  &__title {
+    font-size: 64px;
+    text-transform: none;
+  }
+  &__image {
+    margin: auto;
+    width: 376px;
+    height: 549px;
+  }
+  &__text-left {
+    text-align: right;
+    align-self: flex-end;
+  }
+}
