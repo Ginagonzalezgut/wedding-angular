@@ -40,3 +40,12 @@
     border-color: var(--text-color-light);
   }
 }
+@mixin banner-title {
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+
+@mixin banner-tagline {
+  font-size: 18px;
+}

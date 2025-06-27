@@ -1,3 +1,5 @@
+@use "../../scss/mixins.scss" as *;
+
 .city-image {
   background-size: cover;
   background-position: center;
@@ -34,4 +36,12 @@
 
 .info-section {
   background-color: var(--background-color-grey);
+}
+
+.banner-heading {
+  @include banner-title;
+}
+
+.banner-tagline {
+  @include banner-tagline;
 }

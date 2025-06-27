@@ -11,6 +11,7 @@ import { TouristSpot } from '../types/TouristSpot';
 import { VisitorInformation } from '../types/VisitorInformation';
 import { CarouselModule } from 'primeng/carousel';
 import { DialogModule } from 'primeng/dialog';
+import { LinkComponent } from '../link/link.component';
 
 @Component({
   selector: 'app-city-page',
@@ -24,6 +25,7 @@ import { DialogModule } from 'primeng/dialog';
     VisitorInformationComponent,
     CarouselModule,
     DialogModule,
+    LinkComponent,
   ],
   templateUrl: './city-page.component.html',
   styleUrl: './city-page.component.scss',
