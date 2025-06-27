@@ -48,11 +48,23 @@
     </p>
   </div>
 
-  <p-carousel [value]="touristSpots" [numVisible]="4" [numScroll]="1">
-    <ng-template pTemplate="item" let-touristSpot>
-      <tourist-spots [touristSpot]="touristSpot"></tourist-spots>
-    </ng-template>
-  </p-carousel>
+  <div class="spots-carousel">
+    <p-carousel
+      [value]="touristSpots"
+      [numVisible]="4"
+      [numScroll]="1"
+      [showNavigators]="false"
+      [autoplayInterval]="3000"
+      [circular]="true"
+      indicatorsContentClass="spots-carousel-indicators"
+    >
+      <ng-template pTemplate="item" let-touristSpot>
+        <div class="spots-carousel-item">
+          <tourist-spots [touristSpot]="touristSpot"></tourist-spots>
+        </div>
+      </ng-template>
+    </p-carousel>
+  </div>
 </div>
 
 <div class="info-section py-80">
