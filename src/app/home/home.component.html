@@ -9,15 +9,15 @@
 
 <app-countdown />
 
-<div class="container">
+<div class="container-lg">
   <div class="row g-0">
-    <div class="col">
-      <img
-        src="/home-images/ceremonia.jpg"
-        alt="Pareja de recién casados abrazándose en la playa"
-      />
+    <div class="col-lg-6">
+      <div
+        class="section-image"
+        [style]="{ backgroundImage: 'url(/home-images/ceremonia.jpg)' }"
+      ></div>
     </div>
-    <div class="col">
+    <div class="col-lg-6">
       <card
         title="Ceremonia"
         buttonLabel="Cómo llegar"
@@ -25,16 +25,19 @@
         href="https://maps.app.goo.gl/hRDWusxZ2Ya77RXD7"
       >
         <p>Hora: 7:00 pm (COT)</p>
-        <p>Parroquia Sagrada Familia</p>
-        <p>Calle Valencia Barcelona, España</p>
+        <p>Parroquia Nuestra Señora de las Gracias de Torcoroma</p>
+        <p>
+          Cl. 84 # 51 - 45 <br />
+          Barranquilla, Colombia
+        </p>
       </card>
     </div>
   </div>
 </div>
 
-<div class="container">
-  <div class="row g-0">
-    <div class="col">
+<div class="container-lg">
+  <div class="row g-0 reverse-on-mobile">
+    <div class="col-lg-6">
       <card
         buttonLabel="cómo llegar"
         title="Recepción"
@@ -42,12 +45,18 @@
         href="https://maps.app.goo.gl/bbmUmTe43oauz3p16"
       >
         <p>Hora: 9:00 pm (COT)</p>
-        <p>Hotel Mirador del Alba</p>
-        <p>Calle de los Pinos 248, 11230 Ciudad del Sol</p>
+        <p>Hotel El Prado</p>
+        <p>
+          Cra 54 # 70-10 <br />
+          Barranquilla, Colombia
+        </p>
       </card>
     </div>
-    <div class="col">
-      <img src="/home-images/recepcion.jpg" alt="" />
+    <div class="col-lg-6">
+      <div
+        class="section-image"
+        [style]="{ backgroundImage: 'url(/home-images/recepcion.jpg)' }"
+      ></div>
     </div>
   </div>
 </div>
@@ -66,7 +75,7 @@
 
 <div class="container">
   <div class="row g-0">
-    <div class="col-6 offset-5">
+    <div class="col-7 offset-5">
       <card
         id="dresscode__card"
         title="Dress Code"

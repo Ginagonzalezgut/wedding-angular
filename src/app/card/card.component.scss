@@ -4,12 +4,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 200px;
+  padding: 0;
   text-align: center;
   height: 708px;
   gap: 24px;
 
+  &__content {
+    max-width: 204px;
+  }
+
   &--compact {
-    padding: 0 100px;
+    padding: 100px;
+    .card__content {
+      max-width: none;
+    }
   }
 }

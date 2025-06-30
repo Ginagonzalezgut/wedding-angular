@@ -16,11 +16,6 @@
     @include hero-title;
   }
   &__subtitle {
-    font-size: 24px;
-    font-family: var(--heading-font);
-    letter-spacing: 2px;
-    line-height: 1.2;
-    font-weight: 400;
     text-transform: capitalize;
     margin-bottom: 32px;
   }

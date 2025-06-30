@@ -1,7 +1,7 @@
 <div class="card" [class.card--compact]="compact">
   <icon name="{{ icon }}"></icon>
   <h2 class="card__title">{{ title }}</h2>
-  <div>
+  <div class="card__content">
     <ng-content></ng-content>
   </div>
   @if(buttonLabel){

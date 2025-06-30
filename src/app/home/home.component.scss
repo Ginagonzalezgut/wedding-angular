@@ -32,3 +32,24 @@
 .banner-tagline {
   @include banner-tagline;
 }
+
+.responsive-image {
+  width: 100%;
+
+  @media (min-width: 960px) {
+    width: auto;
+  }
+}
+
+.reverse-on-mobile {
+  @media (max-width: 959px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.section-image {
+  background-size: cover;
+  background-position: center;
+  height: 708px;
+  width: 100%;
+}
