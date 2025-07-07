@@ -1,3 +1,5 @@
+@use "../../scss/mixins.scss" as *;
+
 .our-story {
   &__title {
     font-size: 64px;
@@ -30,4 +32,51 @@
       line-height: 1;
     }
   }
+}
+.first-date {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &__small-image {
+    height: 215px;
+  }
+  &__big-image {
+    height: 511px;
+  }
+}
+.second-date {
+  background-color: var(--background-color-grey);
+  display: flex;
+  flex-direction: row;
+
+  &__image {
+    height: 545px;
+    display: block;
+    margin-top: 157px;
+  }
+}
+
+.third-date {
+  img {
+    width: 100%;
+  }
+  &__right-image {
+    margin-top: 329px;
+  }
+}
+
+.banner {
+  background-image: url("/our-story-images/banner_rsvp.jpg");
+  padding: 132px 0;
+}
+
+.banner-heading {
+  @include banner-title;
+  color: var(--text-color-light);
+}
+
+.banner-tagline {
+  @include banner-tagline;
+  color: var(--text-color-light);
 }

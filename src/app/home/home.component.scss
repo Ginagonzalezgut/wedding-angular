@@ -13,20 +13,12 @@
   display: block;
 }
 
-.banner {
-  display: flex;
-  flex-direction: column;
-  background-image: url(/home-images/banner.jpg);
-  background-repeat: no-repeat;
-  padding-top: 127px;
-  background-position: center top;
-  align-items: center;
-  justify-content: center;
-}
-
 .banner-heading {
   @include banner-title;
-  margin-bottom: 118px;
+  background-image: url("/home-images/banner.jpg");
+  background-size: cover;
+  margin-bottom: 24px;
+  padding: 102px 104px;
 }
 
 .banner-tagline {
