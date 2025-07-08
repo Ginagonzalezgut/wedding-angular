@@ -5,12 +5,13 @@ import { ButtonComponent } from '../button/button.component';
   selector: 'hero',
   imports: [ButtonComponent],
   templateUrl: './hero.component.html',
-  styleUrl: './hero.component.scss'
+  styleUrl: './hero.component.scss',
 })
 export class HeroComponent {
-@Input() borderOn:boolean= true;
-@Input() title:string = "";
-@Input() subtitle:string = "";
-@Input() buttonDisplay:boolean=false;
-@Input() backgroundImage:string="";
+  @Input() borderOn: boolean = true;
+  @Input() title: string = '';
+  @Input() subtitle: string = '';
+  @Input() buttonDisplay: boolean = false;
+  @Input() backgroundImage: string = '';
+  @Input() bgRight: boolean = false;
 }
