@@ -1,33 +1,11 @@
 .countdown {
-  &__section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 80px 40px;
-  }
-  &__title {
+  &-title {
     margin-bottom: 40px;
-    text-align: center;
   }
 
-  &__date {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    text-align: center;
-    gap: 16px 24px;
-    max-width: 798px;
-
-    @media (min-width: 960px) {
-      gap: 40px;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
-    &__number {
-      font-size: 64px;
-      font-weight: 300;
-      line-height: 1.4;
-    }
+  &-number {
+    font-size: 64px;
+    font-weight: 300;
+    line-height: 1.4;
   }
 }
