@@ -55,7 +55,7 @@
     <div class="col-4">
       <img
         class="first-date__big-image"
-        src="/our-story-images/section2021big.jpg"
+        src="/our-story-images/section2021large.jpg"
         alt=""
       />
     </div>
@@ -74,54 +74,38 @@
     </div>
   </div>
 </div>
-<div class="second-date">
-  <div class="container m-80">
+<div class="second-date py-80">
+  <div class="container align-items-center">
     <div class="row">
-      <div class="col-5">
-        <story-moment [year]="2022" title="Lo que pasó después">
-          <p>
-            Cada pareja vive su historia a su manera. En su caso, Giselle y
-            Fernando aprendieron a cultivar su amor desde la distancia, ella en
-            Buenos Aires y él en Bogotá. Cada vez que un amigo o familiar
-            viajaba, Giselle aprovechaba la oportunidad para enviarle una postal
-            a su novio.
-          </p>
-          <p>
-            Aún separados por kilómetros, compartían momentos cotidianos: veían
-            películas al mismo tiempo, cocinaban juntos por videollamada,
-            escuchar juntos la eucaristía por internet, incluso rezaban el
-            rosario juntos.
-          </p>
-        </story-moment>
+      <div class="col-5 offset-1">
+        <div class="second-date-story">
+          <story-moment [year]="2022" title="Lo que pasó después">
+            <p>
+              Cada pareja vive su historia a su manera. En su caso, Giselle y
+              Fernando aprendieron a cultivar su amor desde la distancia, ella
+              en Buenos Aires y él en Bogotá.
+            </p>
+            <p>
+              Aún separados por kilómetros, compartían momentos cotidianos:
+              veían películas al mismo tiempo, cocinaban juntos por
+              videollamada, escuchaban juntos la eucaristía por internet,
+              incluso rezaban el rosario juntos.
+            </p>
+          </story-moment>
+        </div>
       </div>
-      <div class="col-5 offset-2">
-        <img
-          class="second-date__image"
-          src="/our-story-images/section2023.jpg"
-          alt=""
-        />
+      <div class="col-4 offset-1">
+        <img src="/our-story-images/section2022.jpg" alt="" />
       </div>
     </div>
   </div>
 </div>
-
-<div class="container m-80 third-date">
-  <div class="row">
-    <div class="col-4">
-      <img
-        class="third-date__left-image"
-        src="/our-story-images/section2025.jpg"
-        alt=""
-      />
+<div class="container py-80">
+  <div class="row align-items-start">
+    <div class="col-6">
+      <img src="/our-story-images/section2023.png" alt="" />
     </div>
-    <div class="col-3">
-      <img
-        class="third-date__right-image"
-        src="/our-story-images/section2025-right.jpg"
-        alt=""
-      />
-    </div>
-    <div class="col-5">
+    <div class="col-5 offset-1">
       <story-moment [year]="2023" title="El reencuentro">
         <p>
           Giselle regresó a su país después de varios años en Argentina. Ese
@@ -136,14 +120,28 @@
           empezar a soñar, esta vez con los pies en el mismo lugar.
         </p>
       </story-moment>
-      <story-moment [year]="2025" title="Empieza un nuevo capítulo">
-        <p>
-          Poco después, decidieron caminar juntos por la vida y construir un
-          futuro en común. Hoy, cuentan los días con ilusión, sabiendo que están
-          a punto de celebrar su amor rodeados de las personas que más quieren,
-          en la boda con la que siempre soñaron.
-        </p>
-      </story-moment>
+    </div>
+  </div>
+</div>
+
+<div class="fourth-date">
+  <div class="container py-80">
+    <div class="row">
+      <div class="col-5 offset-1">
+        <div class="fourth-date-story">
+          <story-moment [year]="2025" title="Empieza un nuevo capítulo">
+            <p>
+              Poco después, decidieron caminar juntos por la vida y construir un
+              futuro en común. Hoy, cuentan los días con ilusión, sabiendo que
+              están a punto de celebrar su amor rodeados de las personas que más
+              quieren, en la boda con la que siempre soñaron.
+            </p>
+          </story-moment>
+        </div>
+      </div>
+      <div class="col-4 offset-1">
+        <img src="/our-story-images/section2025.jpg" alt="" />
+      </div>
     </div>
   </div>
 </div>
