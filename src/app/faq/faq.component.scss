@@ -11,9 +11,9 @@
   @include center;
 }
 .title {
-  @include hero-title;
   max-width: 798px;
   text-align: center;
+  @include hero-title;
 }
 .groups {
   display: flex;
