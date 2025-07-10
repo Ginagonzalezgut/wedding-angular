@@ -38,12 +38,21 @@
   background-color: var(--background-color-grey);
 }
 
-.banner-heading {
-  @include banner-title;
-}
+.banner {
+  background-image: url("/city-images/banner.jpg");
+  background-size: cover;
+  padding: 122px 0 92px;
 
-.banner-tagline {
-  @include banner-tagline;
+  &-heading {
+    @include banner-title;
+    color: var(--text-color-light);
+  }
+
+  &-tagline {
+    @include banner-tagline;
+    color: var(--text-color-light);
+    margin-bottom: 48px;
+  }
 }
 
 .spots-carousel {
