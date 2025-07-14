@@ -10,4 +10,5 @@ export class LinkComponent {
   @Input() isDark: boolean = false;
   @Input() onDark: boolean = false;
   @Input() href: string = '';
+  @Input() target: string = '';
 }

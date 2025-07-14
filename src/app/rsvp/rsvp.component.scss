@@ -1,0 +1,55 @@
+@use "../../scss/mixins.scss" as *;
+
+.page-background {
+  background-image: linear-gradient(
+    var(--background-color) 0%,
+    var(--background-color) 20%,
+    #eee 50%,
+    var(--background-color) 80%,
+    var(--background-color) 100%
+  );
+  padding-top: 178px;
+}
+
+.hero {
+  background-image: url(/rsvp/hero-rsvp.jpg);
+  background-size: cover;
+  height: 375px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding-top: 84px;
+}
+
+.title {
+  text-align: center;
+  @include hero-title;
+}
+
+.sheet {
+  background-color: var(--background-color);
+  padding: 80px 0 160px;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+}
+
+label {
+  display: block;
+}
+
+.label {
+  @include h3;
+  display: block;
+  font-family: var(--heading-font);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+input[type="text"],
+input[type="email"] {
+  border: none;
+  border-bottom: 1px solid var(--text-color);
+  width: 100%;
+}

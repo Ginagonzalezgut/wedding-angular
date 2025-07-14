@@ -1,0 +1,61 @@
+<div class="page-background">
+  <div class="container">
+    <div class="col-10 offset-1">
+      <div class="hero">
+        <h1 class="title">RSVP</h1>
+      </div>
+      <div class="sheet">
+        <div class="col-10 offset-1">
+          <h2 class="sheet__title">Confirma tu asistencia</h2>
+          <p class="mb-64">
+            Nuestro gran día no estaría completo sin ti. Queremos celebrar este
+            momento tan especial rodeados del amor de quienes más queremos. Nos
+            haría muchísima ilusión que nos acompañaras en nuestra boda. Por
+            favor, confirma tu asistencia a través de este formulario antes del
+            15 de septiembre.
+          </p>
+          <form>
+            <div class="row mb-48">
+              <div class="col-6">
+                <label class="label" for="first-name">Nombre *</label>
+                <input class="text-field" type="text" />
+              </div>
+              <div class="col-6">
+                <label class="label" for="last-name">Apellidos *</label>
+                <input class="text-field" type="text" />
+              </div>
+            </div>
+
+            <div class="mb-48">
+              <label class="label" for="e-mail">Email *</label>
+              <input class="text-field" type="email" />
+            </div>
+
+            <div class="mb-48">
+              <p class="label">¿Asistirás a la boda?</p>
+              <div class="mb-16">
+                <label for="attend_yes">
+                  <input
+                    type="radio"
+                    name="attend"
+                    id="attend_yes"
+                    value="yes"
+                  />
+                  Sí, los acompañaré en ese día tan especial
+                </label>
+              </div>
+              <label for="attend_no">
+                <input type="radio" name="attend" id="attend_no" value="yes" />
+                No, no podré asisir
+              </label>
+            </div>
+            <div class="d-flex justify-content-end">
+              <app-button [isDark]="true">Enviar</app-button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer />

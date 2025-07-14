@@ -58,3 +58,11 @@
 @mixin banner-tagline {
   font-size: 18px;
 }
+
+@mixin h3 {
+  font-size: 18px;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+}
