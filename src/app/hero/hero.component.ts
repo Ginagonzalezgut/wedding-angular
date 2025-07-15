@@ -9,7 +9,7 @@ import { ButtonComponent } from '../button/button.component';
 })
 export class HeroComponent {
   @Input() borderOn: boolean = true;
-  @Input() title: string = '';
+  @Input() titleText: string = '';
   @Input() subtitle: string = '';
   @Input() buttonDisplay: boolean = false;
   @Input() backgroundImage: string = '';

@@ -52,7 +52,6 @@ export class RsvpComponent {
       next: () => {
         this.loading = false;
         this.done = true;
-        this.formulario.reset();
       },
       error: (err) => {
         console.error('Error al enviar', err);

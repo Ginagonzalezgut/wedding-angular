@@ -1,13 +1,13 @@
 <hero
   backgroundImage="/city-images/hero-background.jpg"
-  title="Barranquilla"
+  titleText="Barranquilla"
   subtitle="La Puerta de Oro de Colombia"
 />
 <div class="container m-80">
   <div class="row g-0">
     <div class="col-6">
       <card
-        title="WELCOME TO BARRANQUILLA"
+        titleText="WELCOME TO BARRANQUILLA"
         icon="marimonda"
         buttonLabel="saber más"
         [compact]="true"
@@ -28,7 +28,12 @@
     </div>
   </div>
 </div>
-<card title="Hoteles" icon="hotel" [compact]="true" class="city-page__hotels">
+<card
+  titleText="Hoteles"
+  icon="hotel"
+  [compact]="true"
+  class="city-page__hotels"
+>
   <div class="container">
     <div class="row">
       @for (hotel of hoteles; track hotel.title) {

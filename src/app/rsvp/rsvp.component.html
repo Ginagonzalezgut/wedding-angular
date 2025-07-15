@@ -88,6 +88,7 @@
         <div class="pop-up">
           <div class="col-10 offset-1 pop-up__attend">
             <icon name="attend"></icon>
+            @if (formulario.get('attend')?.value === 'Sí') {
             <h2>¡GRACIAS POR CONFIRMAR TU ASISTENCIA!</h2>
             <div class="col-6 text-center">
               <p>
@@ -96,6 +97,17 @@
               </p>
               <p>Con cariño,</p>
             </div>
+            } @else {
+            <h2>¡TE ECHAREMOS DE MENOS!</h2>
+            <div class="col-6 text-center">
+              <p>
+                Te tendremos presente en el corazón en ese día tan especial.
+                ¡Gracias por hacérnoslo saber!
+              </p>
+              <p>Con cariño,</p>
+            </div>
+            }
+
             <h3>Giselle & Fernando</h3>
           </div>
         </div>

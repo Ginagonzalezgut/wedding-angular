@@ -9,7 +9,7 @@ import { LinkComponent } from '../link/link.component';
   styleUrl: './card.component.scss',
 })
 export class CardComponent {
-  @Input() title: string = '';
+  @Input() titleText: string = '';
   @Input() buttonLabel: string = '';
   @Input() icon: string = '';
   @Input() compact: boolean = false;
