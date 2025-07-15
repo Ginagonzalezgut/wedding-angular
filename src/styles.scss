@@ -18,6 +18,7 @@ $spacers: (
   0: 0,
   16: $spacer,
   24: $spacer * 1.5,
+  32: $spacer * 2,
   48: $spacer * 3,
   64: $spacer * 4,
   80: $spacer * 5,
@@ -37,6 +38,10 @@ $spacers: (
 
 * {
   -webkit-font-smoothing: antialiased;
+}
+
+html {
+  background-color: var(--background-color-dark);
 }
 
 html,

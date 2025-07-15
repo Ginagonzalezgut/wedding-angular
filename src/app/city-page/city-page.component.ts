@@ -55,14 +55,46 @@ export class CityPageComponent {
     },
   ];
   touristSpots: TouristSpot[] = [
-    { imageSpot: 'cienaga-de-mallorquin', name: 'CIÉNAGA DE MALLORQUÍN' },
-    { imageSpot: 'museo-del-carnaval', name: 'MUSEO DEL CARNAVAL' },
-    { imageSpot: 'malecon-del-rio', name: 'MALECÓN DEL RÍO' },
-    { imageSpot: 'muelle-1888', name: 'MUELLE 1888' },
-    { imageSpot: 'ventana-del-mundo', name: 'VENTANA DEL MUNDO' },
-    { imageSpot: 'estatua-de-shakira', name: 'ESTATUA DE SHAKIRA' },
-    { imageSpot: 'volcan-del-totumo', name: 'VOLCÁN DEL TOTUMO' },
-    { imageSpot: 'puerto-mocho', name: 'PUERTO MOCHO' },
+    {
+      imageSpot: 'cienaga-de-mallorquin',
+      name: 'CIÉNAGA DE MALLORQUÍN',
+      url: '',
+    },
+    {
+      imageSpot: 'museo-del-carnaval',
+      name: 'MUSEO DEL CARNAVAL',
+      url: 'https://museocarnavaldebarranquilla.org/',
+    },
+    {
+      imageSpot: 'malecon-del-rio',
+      name: 'MALECÓN DEL RÍO',
+      url: 'https://granmalecon.com/',
+    },
+    {
+      imageSpot: 'muelle-1888',
+      name: 'MUELLE 1888',
+      url: 'https://www.instagram.com/Muelle1888/?locale=es_us&hl=en',
+    },
+    {
+      imageSpot: 'ventana-del-mundo',
+      name: 'VENTANA DEL MUNDO',
+      url: 'https://www.instagram.com/_ventanaalmundo/?hl=es',
+    },
+    {
+      imageSpot: 'estatua-de-shakira',
+      name: 'ESTATUA DE SHAKIRA',
+      url: 'https://es.wikipedia.org/wiki/Estatua_de_Shakira',
+    },
+    {
+      imageSpot: 'volcan-del-totumo',
+      name: 'VOLCÁN DEL TOTUMO',
+      url: 'https://www.civitatis.com/es/cartagena-de-indias/excursion-volcan-totumo/?srsltid=AfmBOooRcpxoJ_akksb91E1BZ39mKMcZ3baD02NquTUdGXyElQQMqKCv',
+    },
+    {
+      imageSpot: 'puerto-mocho',
+      name: 'PUERTO MOCHO',
+      url: 'https://www.instagram.com/playapuertomocho/?hl=es',
+    },
   ];
   visitorsInformation: VisitorInformation[] = [
     {

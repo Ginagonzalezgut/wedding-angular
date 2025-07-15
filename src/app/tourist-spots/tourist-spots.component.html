@@ -1,6 +1,8 @@
-<div
-  class="tourist-spot"
-  [style.background-image]="`url(/city-images/${ touristSpot.imageSpot }.jpg)`"
->
-  <span class="tourist-spot__name">{{ touristSpot.name }}</span>
-</div>
+<a href="{{ touristSpot.url }}" target="_blank"
+  ><div
+    class="tourist-spot"
+    [style.background-image]="`url(/city-images/${ touristSpot.imageSpot }.jpg)`"
+  >
+    <span class="tourist-spot__name">{{ touristSpot.name }}</span>
+  </div>
+</a>

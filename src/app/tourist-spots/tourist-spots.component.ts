@@ -11,5 +11,6 @@ export class TouristSpotsComponent {
   @Input() touristSpot: TouristSpot = {
     imageSpot: '',
     name: '',
+    url: '',
   };
 }
