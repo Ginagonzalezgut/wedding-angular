@@ -26,7 +26,6 @@
 .sheet {
   background-color: var(--background-color);
   padding: 80px 0 110px;
-  position: relative;
 
   &__title {
     text-align: center;
@@ -54,11 +53,9 @@ input[type="email"] {
   width: 100%;
 }
 .pop-up {
-  position: absolute;
-  padding: 270px 80px;
+  padding: 80px 0;
   background-color: var(--background-color);
-  top: 0;
-  width: 100%;
+
   &__attend {
     @include center;
     gap: 24px;

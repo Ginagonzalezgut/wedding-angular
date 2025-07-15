@@ -24,6 +24,8 @@ import { IconComponent } from '../icon/icon.component';
 export class RsvpComponent {
   formulario: FormGroup;
   done = false;
+  loading = false;
+  error = false;
 
   constructor(private fb: FormBuilder, private formService: FormService) {
     this.formulario = this.fb.group({
@@ -43,14 +45,19 @@ export class RsvpComponent {
     }
 
     const datos = this.formulario.value;
+
+    this.loading = true;
+
     this.formService.enviarFormulario(datos).subscribe({
       next: () => {
+        this.loading = false;
         this.done = true;
         this.formulario.reset();
       },
       error: (err) => {
         console.error('Error al enviar', err);
-        alert('Hubo un error al enviar el formulario');
+        this.loading = false;
+        this.error = true;
       },
     });
   }

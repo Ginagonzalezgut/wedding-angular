@@ -5,6 +5,7 @@
         <h1 class="title">RSVP</h1>
       </div>
       <div class="sheet">
+        @if (!loading && !done && !error) {
         <div class="col-10 offset-1">
           <h2 class="sheet__title">Confirma tu asistencia</h2>
           <p class="mb-64">
@@ -79,8 +80,11 @@
             </div>
           </form>
         </div>
-
-        @if (done) {
+        } @if (loading) {
+        <div class="pop-up">
+          <p>Loading</p>
+        </div>
+        } @if (!loading && done) {
         <div class="pop-up">
           <div class="col-10 offset-1 pop-up__attend">
             <icon name="attend"></icon>
@@ -94,6 +98,10 @@
             </div>
             <h3>Giselle & Fernando</h3>
           </div>
+        </div>
+        } @if (!loading && error) {
+        <div class="pop-up">
+          <p>Error</p>
         </div>
         }
       </div>
