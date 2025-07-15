@@ -10,7 +10,7 @@
 }
 
 .hero {
-  background-image: url(/rsvp/hero-rsvp.jpg);
+  background-image: url(/rsvp-images/hero-rsvp.jpg);
   background-size: cover;
   height: 375px;
   background-repeat: no-repeat;
@@ -43,6 +43,7 @@ label {
   font-family: var(--heading-font);
   font-weight: 600;
   line-height: 1.2;
+  margin-bottom: 16px;
 }
 
 input[type="text"],

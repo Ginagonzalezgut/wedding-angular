@@ -28,6 +28,13 @@ export class RsvpComponent {
   }
 
   onSubmit() {
+    if (this.formulario.invalid) {
+      // Puedes marcar todos los campos como "touched" para que se muestren los errores
+      this.formulario.markAllAsTouched();
+      alert('Por favor completa todos los campos requeridos correctamente');
+      return; // Sale sin enviar el formulario
+    }
+
     const datos = this.formulario.value;
     this.formService.enviarFormulario(datos).subscribe({
       next: () => {

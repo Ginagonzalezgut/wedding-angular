@@ -15,11 +15,6 @@ export class FaqComponent {
       title: 'SOBRE LA BODA',
       items: [
         {
-          question: '¿Habrá transporte desde  lA iGLESIA AL lugar de la boda?',
-          answer:
-            'Sí, ofreceremos transporte desde la iglesia hasta el Hotel donde será la recepción. Más adelante enviaremos los horarios y puntos de encuentro por email o WhatsApp',
-        },
-        {
           question: '¿A qué hora debo llegar?',
           answer:
             ' Te recomendamos llegar al menos 15 antes del inicio de la ceremonia para poder acomodarte con calma.',
@@ -58,22 +53,6 @@ export class FaqComponent {
           question: '¿Qué hago si necesito cambiar mi respuesta?',
           answer:
             'Si ya respondiste y necesitas hacer un cambio, puedes escribirnos directamente a [correo]',
-        },
-      ],
-    },
-    {
-      title: 'Opciones de comida',
-      items: [
-        {
-          question: '¿Tienen en cuenta las restricciones alimentarias?',
-          answer:
-            'Sí, queremos que todos nuestros invitados disfruten de la comida sin preocupaciones. Ofreceremos opciones veganas, vegetarianas y sin gluten. Por favor, indica tus preferencias o restricciones alimentarias al confirmar tu asistencia en la sección RSVP, y nos aseguraremos de atenderte adecuadamente.',
-        },
-        {
-          question:
-            '¿Podemos pedir platos específicos por temas de salud o alergias?',
-          answer:
-            'Si tienes alergias graves o una solicitud muy específica, por favor háznoslo saber con antelación. Haremos todo lo posible por adaptarnos y que tengas una experiencia agradable.',
         },
       ],
     },

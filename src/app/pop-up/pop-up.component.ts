@@ -12,17 +12,21 @@ import { ButtonComponent } from '../button/button.component';
 })
 export class PopUpComponent {
   visible = false;
-  styles = {
-    width: '1150px',
-    height: '700px',
-    border: 'none',
-    borderRadius: 0,
-  };
 
   @Input() popUp: PopUp = {
     image: '',
     title: '',
     icon: '',
     content: [],
+  };
+
+  @Input() buttonLabel: string = 'Más información';
+  @Input() buttonAsLink: boolean = false;
+
+  styles = {
+    width: this.popUp?.image ? '1150px' : '1000px',
+    height: '700px',
+    border: 'none',
+    borderRadius: 0,
   };
 }

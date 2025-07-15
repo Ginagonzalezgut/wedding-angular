@@ -10,5 +10,14 @@
   <div class="hotel-card__information">
     <p>{{ hotel.title }}</p>
     <app-link href="{{ hotel.url }}" target="_blank">Reservar</app-link>
+    @if(hotel.discount){
+    <div class="discount-popup">
+      <pop-up
+        [popUp]="discountPopup"
+        buttonLabel="Ver condiciones del descuento"
+        [buttonAsLink]="true"
+      ></pop-up>
+    </div>
+    }
   </div>
 </div>

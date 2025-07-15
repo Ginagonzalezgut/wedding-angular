@@ -79,7 +79,7 @@ export class CityPageComponent {
             description: [
               'Es el sistema de transporte público masivo de buses articulados.',
               'Ideal para moverse durante el día por zonas conocidas.',
-              'Necesitas una tajeta recargable llamada “TuLLave”.',
+              'Necesitas una tajeta recargable.',
             ],
           },
           {
@@ -251,7 +251,7 @@ export class CityPageComponent {
         icon: 'suitcase',
         content: [
           {
-            subtitle: 'Cartagena de Indias (2 h 30 min)',
+            subtitle: 'Cartagena de Indias',
             description: [
               'Qué ver: Ciudad amurallada, Getsemaní, playas urbanas, castillo San Felipe.',
               'Ideal para: Turismo cultural, compras, gastronomía, historia y vida nocturna.',
@@ -259,7 +259,7 @@ export class CityPageComponent {
             ],
           },
           {
-            subtitle: ' Islas del Rosario (desde Cartagena – 45 min en lancha)',
+            subtitle: ' Islas del Rosario',
             description: [
               'Qué ver: Archipiélago con playas de agua cristalina, arrecifes de coral.',
               'Ideal para: Snorkel, relax, excursiones de un día o dormir en una isla.',
@@ -267,7 +267,7 @@ export class CityPageComponent {
             ],
           },
           {
-            subtitle: ' Santa Marta y Parque Tayrona (2 h – 3 h)',
+            subtitle: ' Santa Marta y Parque Tayrona',
             description: [
               'Qué ver: Bahía Concha, Playa Cristal, Cabo San Juan (dentro del Parque).',
               'Ideal para: Naturaleza, senderismo, playas paradisíacas.',

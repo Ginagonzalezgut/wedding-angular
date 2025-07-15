@@ -47,6 +47,15 @@
   &--ondark {
     border-color: var(--text-color-light);
   }
+
+  &--link {
+    border: none;
+    border-bottom: 1px solid var(--text-color);
+    background: none;
+    color: var(--text-color);
+    text-transform: none;
+    padding: 0;
+  }
 }
 
 @mixin banner-title {

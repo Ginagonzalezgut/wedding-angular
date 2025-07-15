@@ -9,4 +9,5 @@ import { Component, Input } from '@angular/core';
 export class ButtonComponent {
   @Input() isDark: boolean = false;
   @Input() onDark: boolean = false;
+  @Input() buttonAsLink: boolean = false;
 }
