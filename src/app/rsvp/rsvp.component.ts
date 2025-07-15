@@ -8,15 +8,22 @@ import {
 import { FormService } from '../form.service';
 import { ButtonComponent } from '../button/button.component';
 import { FooterComponent } from '../footer/footer.component';
+import { IconComponent } from '../icon/icon.component';
 
 @Component({
   selector: 'app-rsvp',
-  imports: [ButtonComponent, FooterComponent, ReactiveFormsModule],
+  imports: [
+    ButtonComponent,
+    FooterComponent,
+    ReactiveFormsModule,
+    IconComponent,
+  ],
   templateUrl: './rsvp.component.html',
   styleUrl: './rsvp.component.scss',
 })
 export class RsvpComponent {
   formulario: FormGroup;
+  done = false;
 
   constructor(private fb: FormBuilder, private formService: FormService) {
     this.formulario = this.fb.group({
@@ -38,7 +45,7 @@ export class RsvpComponent {
     const datos = this.formulario.value;
     this.formService.enviarFormulario(datos).subscribe({
       next: () => {
-        alert('Formulario enviado correctamente');
+        this.done = true;
         this.formulario.reset();
       },
       error: (err) => {
