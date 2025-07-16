@@ -25,7 +25,7 @@ export class RsvpComponent {
   formulario: FormGroup;
   done = false;
   loading = false;
-  error = false;
+  error = true;
 
   constructor(private fb: FormBuilder, private formService: FormService) {
     this.formulario = this.fb.group({
@@ -34,6 +34,10 @@ export class RsvpComponent {
       email: ['', [Validators.required, Validators.email]],
       attend: ['', Validators.required],
     });
+  }
+
+  onclick() {
+    this.error = false;
   }
 
   onSubmit() {

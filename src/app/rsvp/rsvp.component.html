@@ -118,7 +118,13 @@
         </div>
         } @if (!loading && error) {
         <div class="pop-up">
-          <p>Error</p>
+          <div class="pop-up-error-icon">
+            <img src="/icons/error.svg" alt="" width="60" height="60" />
+          </div>
+          <p class="pop-up-error-message">
+            No pudimos confirmar tu asistencia. ¿Podrías intentarlo otra vez?
+          </p>
+          <app-button (click)="onclick()">Reeintentar</app-button>
         </div>
         }
       </div>

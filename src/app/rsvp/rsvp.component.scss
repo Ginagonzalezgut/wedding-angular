@@ -75,4 +75,10 @@ input[type="email"] {
       transform: rotate(360deg);
     }
   }
+  &-error-icon {
+    margin-bottom: 24px;
+  }
+  &-error-message {
+    margin-bottom: 36px;
+  }
 }
