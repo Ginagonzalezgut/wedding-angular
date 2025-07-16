@@ -25,7 +25,7 @@ export class RsvpComponent {
   formulario: FormGroup;
   done = false;
   loading = false;
-  error = true;
+  error = false;
 
   constructor(private fb: FormBuilder, private formService: FormService) {
     this.formulario = this.fb.group({

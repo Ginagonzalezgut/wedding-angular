@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
 import { ButtonComponent } from '../button/button.component';
+import { LinkComponent } from '../link/link.component';
 
 @Component({
   selector: 'hero',
-  imports: [ButtonComponent],
+  imports: [LinkComponent],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss',
 })
