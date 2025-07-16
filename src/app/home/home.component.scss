@@ -68,8 +68,13 @@
 .section-image {
   background-size: cover;
   background-position: center;
-  height: 708px;
+  aspect-ratio: 680 / 416;
   width: 100%;
+
+  @media (min-width: 992px) {
+    aspect-ratio: initial;
+    height: 708px;
+  }
 }
 
 .gift-container {
