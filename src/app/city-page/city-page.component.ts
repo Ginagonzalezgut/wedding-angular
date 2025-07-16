@@ -58,7 +58,7 @@ export class CityPageComponent {
     {
       imageSpot: 'cienaga-de-mallorquin',
       name: 'CIÉNAGA DE MALLORQUÍN',
-      url: '',
+      url: 'https://ecoturismocienagademallorquin.com/?gad_source=1&gad_campaignid=20185354708&gbraid=0AAAAApDG6CDoQuZ-MrtfmSpfe2xUIOSf_&gclid=Cj0KCQjw-NfDBhDyARIsAD-ILeDD-rH7jwC3ykxwAT05eB0ZAmOtDWNoV8SUc7d3fu0qKrckYPNQ8tYaAqSsEALw_wcB',
     },
     {
       imageSpot: 'museo-del-carnaval',

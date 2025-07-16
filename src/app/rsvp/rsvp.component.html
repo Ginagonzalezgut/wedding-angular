@@ -6,7 +6,7 @@
       </div>
       <div class="sheet">
         @if (!loading && !done && !error) {
-        <div class="col-10 offset-1">
+        <div class="col-10 offset-1 form">
           <h2 class="mb-32 text-center">Confirma tu asistencia</h2>
           <p class="mb-64">
             Nuestro gran día no estaría completo sin ti. Queremos celebrar este
@@ -82,7 +82,12 @@
         </div>
         } @if (loading) {
         <div class="pop-up">
-          <p>Loading</p>
+          <div class="pop-up-loading-icon">
+            <img src="/icons/loading.svg" alt="" width="80" height="80" />
+          </div>
+          <div class="pop-up-message">
+            <p>Guardando tu respuesta con mucho cariño...</p>
+          </div>
         </div>
         } @if (!loading && done) {
         <div class="pop-up">
