@@ -50,11 +50,16 @@
 
   &--link {
     border: none;
-    border-bottom: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--text-color-light);
     background: none;
-    color: var(--text-color);
     text-transform: none;
     padding: 0;
+    font-style: italic;
+
+    &:hover {
+      background-color: transparent;
+      color: inherit;
+    }
   }
 }
 
