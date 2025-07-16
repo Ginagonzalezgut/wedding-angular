@@ -4,17 +4,20 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0;
+  padding: 48px 24px;
   text-align: center;
-  height: 708px;
   gap: 24px;
+
+  @media (min-width: 992px) {
+    height: 708px;
+    padding: 0;
+  }
 
   &__content {
     max-width: 204px;
   }
 
   &--compact {
-    padding: 24px;
     .card__content {
       max-width: none;
     }
