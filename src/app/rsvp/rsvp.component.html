@@ -1,6 +1,6 @@
 <div class="page-background">
   <div class="container">
-    <div class="col-10 offset-1">
+    <div class="col-lg-10 offset-lg-1">
       <div class="hero">
         <h1 class="title">RSVP</h1>
       </div>
@@ -8,7 +8,7 @@
         @if (!loading && !done && !error) {
         <div class="col-10 offset-1 form">
           <h2 class="mb-32 text-center">Confirma tu asistencia</h2>
-          <p class="mb-64">
+          <p class="mb-64 sheet-intro">
             Nuestro gran día no estaría completo sin ti. Queremos celebrar este
             momento tan especial rodeados del amor de quienes más queremos. Nos
             haría muchísima ilusión que nos acompañaras en nuestra boda. Por
@@ -16,8 +16,8 @@
             15 de septiembre.
           </p>
           <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
-            <div class="row mb-48">
-              <div class="col-6">
+            <div class="row mb-48 gy-48">
+              <div class="col-lg-6">
                 <label class="label" for="firstname">Nombre *</label>
                 <input
                   class="text-field"
@@ -27,7 +27,7 @@
                   formControlName="firstname"
                 />
               </div>
-              <div class="col-6">
+              <div class="col-lg-6">
                 <label class="label" for="lastname">Apellidos *</label>
                 <input
                   class="text-field"

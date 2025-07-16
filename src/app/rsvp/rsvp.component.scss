@@ -25,7 +25,15 @@
 
 .sheet {
   background-color: var(--background-color);
-  height: 800px;
+  min-height: 800px;
+
+  &-intro {
+    text-align: center;
+
+    @media (min-width: 992px) {
+      text-align: left;
+    }
+  }
 }
 
 .form {

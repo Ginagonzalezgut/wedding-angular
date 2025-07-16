@@ -7,3 +7,27 @@
     text-decoration: underline;
   }
 }
+
+.logo-column {
+  text-align: center;
+
+  @media (min-width: 992px) {
+    text-align: left;
+  }
+}
+
+.logo {
+  margin: auto;
+
+  @media (min-width: 992px) {
+    margin: 0;
+  }
+}
+
+.credits-column {
+  text-align: center;
+
+  @media (min-width: 992px) {
+    text-align: right;
+  }
+}

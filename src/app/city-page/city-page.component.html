@@ -3,9 +3,9 @@
   titleText="Barranquilla"
   subtitle="La Puerta de Oro de Colombia"
 />
-<div class="container m-80">
+<div class="container my-24 my-lg-80">
   <div class="row g-0">
-    <div class="col-6">
+    <div class="col-lg-6">
       <card
         titleText="WELCOME TO BARRANQUILLA"
         icon="marimonda"
@@ -23,7 +23,7 @@
         </p>
       </card>
     </div>
-    <div class="col-6">
+    <div class="col-lg-6">
       <div class="city-image"></div>
     </div>
   </div>
@@ -37,7 +37,7 @@
   <div class="container">
     <div class="row">
       @for (hotel of hoteles; track hotel.title) {
-      <div class="col-4"><hotel-card [hotel]="hotel" /></div>
+      <div class="col-lg-4"><hotel-card [hotel]="hotel" /></div>
       }
     </div>
   </div>
@@ -61,6 +61,7 @@
       [showNavigators]="false"
       [autoplayInterval]="3000"
       [circular]="true"
+      [responsiveOptions]="responsiveOptions"
       indicatorsContentClass="spots-carousel-indicators"
     >
       <ng-template pTemplate="item" let-touristSpot>

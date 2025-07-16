@@ -352,4 +352,11 @@ export class CityPageComponent {
       },
     },
   ];
+  responsiveOptions = [
+    {
+      breakpoint: '992px',
+      numVisible: 1,
+      numScroll: 1,
+    },
+  ];
 }
