@@ -64,9 +64,13 @@
 }
 
 @mixin banner-title {
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+
+  @media (min-width: 992px) {
+    font-size: 4rem;
+  }
 }
 
 @mixin banner-tagline {

@@ -54,16 +54,16 @@
     </div>
     <div class="col-lg-6">
       <div
-        class="section-image"
+        class="section-image party-image"
         [style]="{ backgroundImage: 'url(/home-images/recepcion.jpg)' }"
       ></div>
     </div>
   </div>
 </div>
 
-<div class="container mt-80">
+<div class="container mt-24 mt-lg-80">
   <div class="row g-0">
-    <div class="col-7 offset-1">
+    <div class="col-lg-7 offset-lg-1">
       <img
         class="w-100"
         src="/home-images/dress-code.jpg"
@@ -75,7 +75,7 @@
 
 <div class="container">
   <div class="row g-0">
-    <div class="col-7 offset-5">
+    <div class="col-lg-7 offset-lg-5">
       <card
         id="dresscode__card"
         titleText="Dress Code"
@@ -99,9 +99,9 @@
 </div>
 
 <div class="gift-container">
-  <div class="container mt-80">
+  <div class="container mt-24 mt-lg-80">
     <div class="row g-0">
-      <div class="col-4">
+      <div class="col-lg-4">
         <img
           class="w-100 position-relative"
           src="/home-images/detalle-arriba.jpg"
@@ -113,7 +113,7 @@
 
   <div class="container">
     <div class="row g-0">
-      <div class="col-6 offset-3">
+      <div class="col-lg-6 offset-lg-3">
         <card
           class="gift__card"
           titleText="UN DETALLE CON CARIÑO"
@@ -136,7 +136,7 @@
 
   <div class="container">
     <div class="row g-0">
-      <div class="col-4 offset-8 dresscode__image">
+      <div class="col-4 offset-8 gift__image">
         <img
           class="w-100 position-relative"
           src="/home-images/detalle-abajo.jpg"
@@ -149,11 +149,14 @@
 
 <div class="container my-80">
   <div class="row">
-    <div class="col-10 offset-1 text-center">
+    <div class="col-lg-10 offset-lg-1 text-center">
       <h2 class="banner-heading">
-        LA FIESTA &nbsp; &nbsp; &nbsp; NO ES LO MISMO SIN TI
+        LA FIESTA
+        <span class="banner-space-chars">&nbsp; &nbsp; &nbsp;</span> NO ES LO
+        MISMO SIN TI
       </h2>
       <p class="banner-tagline">
+        <span class="banner-date"> 25 OCT. 2025 </span>
         Tu presencia hará que este día sea aún más especial.
       </p>
       <app-link href="/rsvp" [isDark]="true">confirma tu asistencia</app-link>

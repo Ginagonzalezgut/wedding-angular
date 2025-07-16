@@ -1,29 +1,54 @@
 @use "../../scss/mixins.scss" as *;
 
 #dresscode__card {
-  margin-top: -260px;
   display: block;
+
+  @media (min-width: 992px) {
+    margin-top: -260px;
+  }
 }
 .gift__card {
-  margin-top: -170px;
-  display: block;
-}
-.dresscode__image {
-  margin-top: -170px;
+  @media (min-width: 992px) {
+    margin-top: -170px;
+  }
   display: block;
 }
 
 .banner-heading {
   @include banner-title;
-  background-image: url("/home-images/banner.jpg");
-  background-size: cover;
+  background-image: url("/home-images/banner-mobile.jpg");
+  background-size: 184px 356px;
+  background-repeat: no-repeat;
+  background-position: center;
   letter-spacing: 5px;
-  margin-bottom: 24px;
-  padding: 102px 104px;
+
+  padding: 218px 0 58px;
+  margin: 0 -20px 24px;
+
+  @media (min-width: 992px) {
+    background-image: url("/home-images/banner.jpg");
+    background-size: cover;
+    padding: 102px 104px;
+    margin: 0 0 24px;
+  }
+}
+
+.banner-space-chars {
+  display: none;
+
+  @media (min-width: 992px) {
+    display: inline;
+  }
 }
 
 .banner-tagline {
   @include banner-tagline;
+}
+
+.banner-date {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
 }
 
 .responsive-image {
@@ -54,4 +79,20 @@
     var(--background-color-grey)
   );
   padding-bottom: 80px;
+}
+.gift__image {
+  display: none;
+
+  @media (min-width: 960px) {
+    margin-top: -170px;
+    display: block;
+  }
+}
+
+.party-image {
+  margin-top: 24px;
+
+  @media (min-width: 992px) {
+    margin: 0;
+  }
 }

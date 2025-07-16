@@ -14,9 +14,13 @@
   }
 
   &--compact {
-    padding: 100px;
+    padding: 24px;
     .card__content {
       max-width: none;
+    }
+
+    @media (min-width: 960px) {
+      padding: 100px;
     }
   }
 }
