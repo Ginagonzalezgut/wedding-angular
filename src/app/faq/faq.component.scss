@@ -22,7 +22,10 @@
 
   .group {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    @media (min-width: 992px) {
+      flex-direction: row;
+    }
 
     &__items {
       display: flex;

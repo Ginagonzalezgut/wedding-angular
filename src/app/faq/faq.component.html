@@ -2,11 +2,11 @@
   <div class="hero">
     <h1 class="title">Preguntas frecuentes</h1>
   </div>
-  <div class="groups container m-80">
+  <div class="groups container m-lg-80">
     @for (group of groups; track group.title) {
     <div class="group">
-      <h2 class="col-3 group__title">{{ group.title }}</h2>
-      <div class="col-7 offset-2 group__items">
+      <h2 class="col-lg-3 group__title">{{ group.title }}</h2>
+      <div class="col-lg-7 offset-lg-2 group__items">
         @for (qa of group.items ; track $index) {
         <div>
           <h3 class="group__question">{{ qa.question }}</h3>
