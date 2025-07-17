@@ -13,11 +13,14 @@
   [showHeader]="false"
   [contentStyle]="{ padding: 0, }"
   [dismissableMask]="true"
+  appendTo="body"
 >
   <div class="pop-up">
     @if(popUp.image){
-    <div class="pop-up__image">
-      <img src="city-images/{{ popUp.image }}.jpg" alt="" />
+    <div class="desktop-only">
+      <div class="pop-up__image">
+        <img src="city-images/{{ popUp.image }}.jpg" alt="" />
+      </div>
     </div>
     }
 

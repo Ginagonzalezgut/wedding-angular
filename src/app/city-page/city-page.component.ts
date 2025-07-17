@@ -9,7 +9,7 @@ import { VisitorInformationComponent } from '../visitor-information/visitor-info
 import { HotelType } from '../types/Hotel';
 import { TouristSpot } from '../types/TouristSpot';
 import { VisitorInformation } from '../types/VisitorInformation';
-import { CarouselModule } from 'primeng/carousel';
+import { Carousel, CarouselModule } from 'primeng/carousel';
 import { DialogModule } from 'primeng/dialog';
 import { LinkComponent } from '../link/link.component';
 
@@ -359,4 +359,8 @@ export class CityPageComponent {
       numScroll: 1,
     },
   ];
+
+  constructor() {
+    Carousel.prototype.onTouchMove = () => {};
+  }
 }

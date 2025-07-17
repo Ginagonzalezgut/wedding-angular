@@ -34,7 +34,24 @@
   [compact]="true"
   class="city-page__hotels"
 >
-  <div class="container">
+  <div class="mobile-only carousel-wrapper hotels-carousel">
+    <p-carousel
+      [value]="hoteles"
+      [numVisible]="1"
+      [numScroll]="1"
+      [showNavigators]="false"
+      [circular]="true"
+      [responsiveOptions]="responsiveOptions"
+      indicatorsContentClass="spots-carousel-indicators"
+    >
+      <ng-template pTemplate="item" let-hotel>
+        <div class="spots-carousel-item">
+          <hotel-card [hotel]="hotel" />
+        </div>
+      </ng-template>
+    </p-carousel>
+  </div>
+  <div class="desktop-only container">
     <div class="row">
       @for (hotel of hoteles; track hotel.title) {
       <div class="col-lg-4"><hotel-card [hotel]="hotel" /></div>
@@ -53,7 +70,7 @@
     </p>
   </div>
 
-  <div class="spots-carousel">
+  <div class="carousel-wrapper spots-carousel">
     <p-carousel
       [value]="touristSpots"
       [numVisible]="4"

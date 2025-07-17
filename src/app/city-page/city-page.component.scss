@@ -55,13 +55,24 @@
   }
 }
 
+.carousel-wrapper {
+  width: 100%;
+}
+
 .spots-carousel {
   margin: auto;
   max-width: 1800px;
-  width: 100%;
 
   &-item {
     margin: 0 8px;
+  }
+}
+
+.hotels-carousel {
+  max-width: 400px;
+
+  @media (min-width: 960px) {
+    max-width: auto;
   }
 }
 
