@@ -59,7 +59,6 @@
       [numVisible]="4"
       [numScroll]="1"
       [showNavigators]="false"
-      [autoplayInterval]="3000"
       [circular]="true"
       [responsiveOptions]="responsiveOptions"
       indicatorsContentClass="spots-carousel-indicators"
@@ -80,13 +79,34 @@
       <h2 class="m-0">INFORMACIÓN DE INTERES</h2>
     </div>
 
-    <div class="row row-gap-80">
-      @for (visitorInformation of visitorsInformation; track
-      visitorInformation.title) {
-      <div class="col-4">
-        <visitor-information [visitorInformation]="visitorInformation" />
+    <div class="carrousel-visitor-information mobile-only">
+      <p-carousel
+        [value]="visitorsInformation"
+        [numVisible]="1"
+        [numScroll]="1"
+        [showNavigators]="true"
+        [circular]="true"
+        indicatorsContentClass="spots-carousel-indicators"
+      >
+        <ng-template let-visitorInformation pTemplate="item">
+          <div class="carousel-item">
+            <visitor-information
+              [visitorInformation]="visitorInformation"
+            ></visitor-information>
+          </div>
+        </ng-template>
+      </p-carousel>
+    </div>
+
+    <div class="desktop-only">
+      <div class="row row-gap-80">
+        @for (visitorInformation of visitorsInformation; track
+        visitorInformation.title) {
+        <div class="col-4">
+          <visitor-information [visitorInformation]="visitorInformation" />
+        </div>
+        }
       </div>
-      }
     </div>
   </div>
 </div>
