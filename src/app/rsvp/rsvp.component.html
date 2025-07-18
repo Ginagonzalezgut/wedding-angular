@@ -92,11 +92,11 @@
           </div>
           } @if (!loading && done) {
           <div class="pop-up">
-            <div class="col-10 offset-1 pop-up__attend">
+            <div class="col-lg-10 offset-lg-1 pop-up__attend text-center">
               <icon name="attend"></icon>
               @if (formulario.get('attend')?.value === 'Sí') {
               <h2>¡GRACIAS POR CONFIRMAR TU ASISTENCIA!</h2>
-              <div class="col-6 text-center">
+              <div class="col-lg-6">
                 <p>
                   Nos llena de alegría saber que nos acompañarás en un día tan
                   significativo para nosotros.
@@ -105,7 +105,7 @@
               </div>
               } @else {
               <h2>¡TE ECHAREMOS DE MENOS!</h2>
-              <div class="col-6 text-center">
+              <div class="col-lg-6 text-center">
                 <p>
                   Te tendremos presente en el corazón en ese día tan especial.
                   ¡Gracias por hacérnoslo saber!
@@ -122,7 +122,7 @@
             <div class="pop-up-error-icon">
               <img src="/icons/error.svg" alt="" width="60" height="60" />
             </div>
-            <p class="pop-up-error-message">
+            <p class="pop-up-error-message text-center px-24">
               No pudimos confirmar tu asistencia. ¿Podrías intentarlo otra vez?
             </p>
             <app-button (click)="onclick()">Reeintentar</app-button>
