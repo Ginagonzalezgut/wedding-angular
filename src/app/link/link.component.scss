@@ -1,5 +1,13 @@
 @use "../../scss/mixins.scss" as *;
 
+:host {
+  width: 100%;
+
+  @media (min-width: 992px) {
+    width: auto;
+  }
+}
+
 .button {
   @include button;
 }
