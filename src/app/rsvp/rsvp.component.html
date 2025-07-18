@@ -4,129 +4,131 @@
       <div class="hero">
         <h1 class="title">RSVP</h1>
       </div>
-      <div class="sheet">
-        @if (!loading && !done && !error) {
-        <div class="col-10 offset-1 form">
-          <h2 class="mb-32 text-center">Confirma tu asistencia</h2>
-          <p class="mb-64 sheet-intro">
-            Nuestro gran día no estaría completo sin ti. Queremos celebrar este
-            momento tan especial rodeados del amor de quienes más queremos. Nos
-            haría muchísima ilusión que nos acompañaras en nuestra boda. Por
-            favor, confirma tu asistencia a través de este formulario antes del
-            15 de septiembre.
-          </p>
-          <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
-            <div class="row mb-48 gy-48">
-              <div class="col-lg-6">
-                <label class="label" for="firstname">Nombre *</label>
+      <div class="sheet" #sheet>
+        <div class="container">
+          @if (!loading && !done && !error) {
+          <div class="col-10 offset-1 form">
+            <h2 class="mb-32 text-center">Confirma tu asistencia</h2>
+            <p class="mb-64 sheet-intro">
+              Nuestro gran día no estaría completo sin ti. Queremos celebrar
+              este momento tan especial rodeados del amor de quienes más
+              queremos. Nos haría muchísima ilusión que nos acompañaras en
+              nuestra boda. Por favor, confirma tu asistencia a través de este
+              formulario antes del 15 de septiembre.
+            </p>
+            <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+              <div class="row mb-48 gy-48">
+                <div class="col-lg-6">
+                  <label class="label" for="firstname">Nombre *</label>
+                  <input
+                    class="text-field"
+                    type="text"
+                    id="firstname"
+                    name="firstname"
+                    formControlName="firstname"
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <label class="label" for="lastname">Apellidos *</label>
+                  <input
+                    class="text-field"
+                    type="text"
+                    id="lastname"
+                    name="lastname"
+                    formControlName="lastname"
+                  />
+                </div>
+              </div>
+
+              <div class="mb-48">
+                <label class="label" for="email">Email *</label>
                 <input
                   class="text-field"
-                  type="text"
-                  id="firstname"
-                  name="firstname"
-                  formControlName="firstname"
+                  type="email"
+                  id="email"
+                  name="email"
+                  formControlName="email"
                 />
               </div>
-              <div class="col-lg-6">
-                <label class="label" for="lastname">Apellidos *</label>
-                <input
-                  class="text-field"
-                  type="text"
-                  id="lastname"
-                  name="lastname"
-                  formControlName="lastname"
-                />
-              </div>
-            </div>
 
-            <div class="mb-48">
-              <label class="label" for="email">Email *</label>
-              <input
-                class="text-field"
-                type="email"
-                id="email"
-                name="email"
-                formControlName="email"
-              />
-            </div>
-
-            <div class="mb-48">
-              <p class="label">¿Asistirás a la boda?</p>
-              <div class="mb-16">
-                <label for="attend_yes">
+              <div class="mb-48">
+                <p class="label">¿Asistirás a la boda?</p>
+                <div class="mb-16">
+                  <label for="attend_yes">
+                    <input
+                      type="radio"
+                      name="attend"
+                      id="attend_yes"
+                      value="Sí"
+                      formControlName="attend"
+                    />
+                    Sí, los acompañaré en ese día tan especial
+                  </label>
+                </div>
+                <label for="attend_no">
                   <input
                     type="radio"
                     name="attend"
-                    id="attend_yes"
-                    value="Sí"
+                    id="attend_no"
+                    value="No"
                     formControlName="attend"
                   />
-                  Sí, los acompañaré en ese día tan especial
+                  No, no podré asisir
                 </label>
               </div>
-              <label for="attend_no">
-                <input
-                  type="radio"
-                  name="attend"
-                  id="attend_no"
-                  value="No"
-                  formControlName="attend"
-                />
-                No, no podré asisir
-              </label>
-            </div>
-            <div class="d-flex justify-content-start">
-              <app-button [isDark]="true">Enviar</app-button>
-            </div>
-          </form>
-        </div>
-        } @if (loading) {
-        <div class="pop-up">
-          <div class="pop-up-loading-icon">
-            <img src="/icons/loading.svg" alt="" width="80" height="80" />
+              <div class="d-flex justify-content-start">
+                <app-button [isDark]="true">Enviar</app-button>
+              </div>
+            </form>
           </div>
-          <div class="pop-up-message">
-            <p>Guardando tu respuesta con mucho cariño...</p>
+          } @if (loading) {
+          <div class="pop-up">
+            <div class="pop-up-loading-icon">
+              <img src="/icons/loading.svg" alt="" width="80" height="80" />
+            </div>
+            <div class="pop-up-message">
+              <p>Guardando tu respuesta con mucho cariño...</p>
+            </div>
           </div>
-        </div>
-        } @if (!loading && done) {
-        <div class="pop-up">
-          <div class="col-10 offset-1 pop-up__attend">
-            <icon name="attend"></icon>
-            @if (formulario.get('attend')?.value === 'Sí') {
-            <h2>¡GRACIAS POR CONFIRMAR TU ASISTENCIA!</h2>
-            <div class="col-6 text-center">
-              <p>
-                Nos llena de alegría saber que nos acompañarás en un día tan
-                significativo para nosotros.
-              </p>
-              <p>Con cariño,</p>
-            </div>
-            } @else {
-            <h2>¡TE ECHAREMOS DE MENOS!</h2>
-            <div class="col-6 text-center">
-              <p>
-                Te tendremos presente en el corazón en ese día tan especial.
-                ¡Gracias por hacérnoslo saber!
-              </p>
-              <p>Con cariño,</p>
-            </div>
-            }
+          } @if (!loading && done) {
+          <div class="pop-up">
+            <div class="col-10 offset-1 pop-up__attend">
+              <icon name="attend"></icon>
+              @if (formulario.get('attend')?.value === 'Sí') {
+              <h2>¡GRACIAS POR CONFIRMAR TU ASISTENCIA!</h2>
+              <div class="col-6 text-center">
+                <p>
+                  Nos llena de alegría saber que nos acompañarás en un día tan
+                  significativo para nosotros.
+                </p>
+                <p>Con cariño,</p>
+              </div>
+              } @else {
+              <h2>¡TE ECHAREMOS DE MENOS!</h2>
+              <div class="col-6 text-center">
+                <p>
+                  Te tendremos presente en el corazón en ese día tan especial.
+                  ¡Gracias por hacérnoslo saber!
+                </p>
+                <p>Con cariño,</p>
+              </div>
+              }
 
-            <h3>Giselle & Fernando</h3>
+              <h3>Giselle & Fernando</h3>
+            </div>
           </div>
-        </div>
-        } @if (!loading && error) {
-        <div class="pop-up">
-          <div class="pop-up-error-icon">
-            <img src="/icons/error.svg" alt="" width="60" height="60" />
+          } @if (!loading && error) {
+          <div class="pop-up">
+            <div class="pop-up-error-icon">
+              <img src="/icons/error.svg" alt="" width="60" height="60" />
+            </div>
+            <p class="pop-up-error-message">
+              No pudimos confirmar tu asistencia. ¿Podrías intentarlo otra vez?
+            </p>
+            <app-button (click)="onclick()">Reeintentar</app-button>
           </div>
-          <p class="pop-up-error-message">
-            No pudimos confirmar tu asistencia. ¿Podrías intentarlo otra vez?
-          </p>
-          <app-button (click)="onclick()">Reeintentar</app-button>
+          }
         </div>
-        }
       </div>
     </div>
   </div>

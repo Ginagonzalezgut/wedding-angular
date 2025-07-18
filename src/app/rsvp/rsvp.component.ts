@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import {
   FormBuilder,
   FormGroup,
@@ -22,6 +22,8 @@ import { IconComponent } from '../icon/icon.component';
   styleUrl: './rsvp.component.scss',
 })
 export class RsvpComponent {
+  @ViewChild('sheet') sheet!: ElementRef;
+
   formulario: FormGroup;
   done = false;
   loading = false;
@@ -34,6 +36,10 @@ export class RsvpComponent {
       email: ['', [Validators.required, Validators.email]],
       attend: ['', Validators.required],
     });
+  }
+
+  scrollToSheet() {
+    this.sheet.nativeElement.scrollIntoView({ behavior: 'smooth' });
   }
 
   onclick() {
@@ -51,6 +57,8 @@ export class RsvpComponent {
     const datos = this.formulario.value;
 
     this.loading = true;
+
+    this.scrollToSheet();
 
     this.formService.enviarFormulario(datos).subscribe({
       next: () => {

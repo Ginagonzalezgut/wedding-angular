@@ -48,13 +48,13 @@
 .responsive-image {
   width: 100%;
 
-  @media (min-width: 960px) {
+  @media (min-width: 992px) {
     width: auto;
   }
 }
 
 .reverse-on-mobile {
-  @media (max-width: 959px) {
+  @media (min-width: 992px) {
     flex-direction: column-reverse;
   }
 }

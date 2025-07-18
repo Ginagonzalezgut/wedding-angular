@@ -54,7 +54,8 @@ label {
 input[type="text"],
 input[type="email"] {
   border: none;
-  border-bottom: 1px solid var(--text-color);
+  border-bottom: 1px solid var(--input-border-color);
+  border-radius: 0;
   width: 100%;
 }
 .pop-up {
