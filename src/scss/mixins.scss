@@ -1,3 +1,7 @@
+:host {
+  width: 100%;
+}
+
 @mixin hero-title {
   font-family: var(--hero-font);
   font-weight: 400;
@@ -27,8 +31,14 @@
   text-transform: uppercase;
   line-height: 1.4;
   padding-block: 12px;
-  padding-inline: 32px;
+  text-align: center;
+  width: 100%;
   transition: all 0.3s ease, color 0.3s ease, transform 0.3s ease;
+
+  @media (min-width: 992px) {
+    padding-inline: 32px;
+    width: auto;
+  }
 
   &:hover {
     background-color: var(--background-color-dark);

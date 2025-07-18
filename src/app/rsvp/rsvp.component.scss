@@ -45,9 +45,7 @@ label {
 }
 
 .label {
-  @include h3;
   display: block;
-  font-family: var(--heading-font);
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 16px;

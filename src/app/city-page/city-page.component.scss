@@ -40,8 +40,12 @@
 
 .banner {
   background-image: url("/city-images/banner.jpg");
-  background-size: cover;
+  background-size: contain;
   padding: 122px 0 92px;
+
+  @media (min-width: 960px) {
+    background-size: cover;
+  }
 
   &-heading {
     @include banner-title;

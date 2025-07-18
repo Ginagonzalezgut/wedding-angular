@@ -10,7 +10,7 @@
 <app-countdown />
 
 <div class="container-lg">
-  <div class="row gx-0 gy-24">
+  <div class="row gx-0 reverse-on-mobile">
     <div class="col-lg-6">
       <div
         class="section-image"
@@ -35,8 +35,8 @@
   </div>
 </div>
 
-<div class="container-lg">
-  <div class="row gx-0 gy-24 reverse-on-mobile">
+<div class="container-lg mt-32 mt-lg-0">
+  <div class="row gx-0">
     <div class="col-lg-6">
       <card
         buttonLabel="cómo llegar"
@@ -54,16 +54,16 @@
     </div>
     <div class="col-lg-6">
       <div
-        class="section-image party-image"
+        class="section-image"
         [style]="{ backgroundImage: 'url(/home-images/recepcion.jpg)' }"
       ></div>
     </div>
   </div>
 </div>
 
-<div class="container mt-24 mt-lg-80">
+<div class="container mt-80 desktop-only">
   <div class="row g-0">
-    <div class="col-lg-7 offset-lg-1">
+    <div class="col-lg-7">
       <img
         class="w-100"
         src="/home-images/dress-code.jpg"
@@ -73,7 +73,7 @@
   </div>
 </div>
 
-<div class="container mt-24 mt-lg-0">
+<div class="container mt-32 mt-lg-0">
   <div class="row g-0">
     <div class="col-lg-7 offset-lg-5">
       <card
@@ -98,8 +98,20 @@
   </div>
 </div>
 
+<div class="container mt-lg-80 mobile-only">
+  <div class="row g-0">
+    <div class="col-lg-7 offset-lg-1">
+      <img
+        class="w-100"
+        src="/home-images/dress-code.jpg"
+        alt="Pareja celebrando felices el día de su boda"
+      />
+    </div>
+  </div>
+</div>
+
 <div class="gift-container">
-  <div class="container mt-24 mt-lg-80">
+  <div class="container mt-80 desktop-only">
     <div class="row g-0">
       <div class="col-lg-4">
         <img
@@ -111,7 +123,7 @@
     </div>
   </div>
 
-  <div class="container mt-24 mt-lg-0">
+  <div class="container mt-32 mt-lg-0">
     <div class="row g-0">
       <div class="col-lg-6 offset-lg-3">
         <card
@@ -130,6 +142,18 @@
             que nos ayudará a comenzar esta nueva etapa juntos.
           </p>
         </card>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-lg-80 mobile-only">
+    <div class="row g-0">
+      <div class="col-lg-4">
+        <img
+          class="w-100 position-relative"
+          src="/home-images/detalle-arriba.jpg"
+          alt=""
+        />
       </div>
     </div>
   </div>
