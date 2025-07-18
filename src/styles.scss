@@ -60,15 +60,7 @@ ul {
 }
 
 h2 {
-  font-size: 20px;
-  letter-spacing: 2px;
-  line-height: 1.2;
-  font-weight: 400;
-  text-transform: uppercase;
-
-  @media (min-width: 960px) {
-    font-size: 24px;
-  }
+  @include h2;
 }
 h3 {
   @include h3;
@@ -99,14 +91,20 @@ h6 {
 
 .desktop-only {
   display: none;
-  @media (min-width: 960px) {
+  @media (min-width: 992px) {
     display: block;
   }
 }
 
 .mobile-only {
   display: block;
-  @media (min-width: 960px) {
+  @media (min-width: 992px) {
     display: none;
   }
+}
+
+em {
+  font-family: var(--em-font);
+  font-size: 48px;
+  line-height: 1;
 }
