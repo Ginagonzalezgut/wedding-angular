@@ -83,8 +83,12 @@
 
 .hero-ampersand {
   display: block;
+  font-size: 32px;
+  margin-top: 12px;
 
   @media (min-width: 992px) {
     display: inline-block;
+    font-size: inherit;
+    margin: 0;
   }
 }

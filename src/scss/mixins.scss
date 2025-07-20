@@ -1,15 +1,17 @@
 @mixin hero-title {
   font-family: var(--hero-font);
   font-weight: 400;
-  font-size: 36px;
+  font-size: 48px;
   letter-spacing: 3px;
-  line-height: 1.4;
+  line-height: 1;
+  margin-bottom: 24px;
 
   @media (min-width: 992px) {
     font-size: 72px;
     letter-spacing: 6px;
     line-height: 1.2;
     text-transform: uppercase;
+    margin-bottom: 24px;
   }
 }
 
