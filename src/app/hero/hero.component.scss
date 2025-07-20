@@ -16,10 +16,6 @@
     background-attachment: fixed;
     height: 100vh;
   }
-
-  &__title {
-    @include hero-title;
-  }
   &__subtitle {
     text-transform: capitalize;
     margin-bottom: 32px;
@@ -27,4 +23,8 @@
 }
 .bg-right {
   background-position: right;
+}
+
+::ng-deep .hero__title {
+  @include hero-title;
 }

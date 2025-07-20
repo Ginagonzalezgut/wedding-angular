@@ -4,7 +4,7 @@
   [style.background-image]="`url(${backgroundImage})`"
 >
   <div class="container">
-    <h1 class="hero__title">{{ titleText }}</h1>
+    <ng-content select=".hero__title"></ng-content>
     <h2 class="hero__subtitle">{{ subtitle }}</h2>
     @if (buttonDisplay) {
     <app-link href="/rsvp">confirma tu asistencia</app-link>
