@@ -39,7 +39,11 @@
   background-color: var(--background-color);
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 24px;
+
+  @media (min-width: 992px) {
+    gap: 48px;
+  }
 
   &__subtitle {
     max-width: 585px;
@@ -53,7 +57,9 @@
 
 .banner {
   background-image: url("/city-images/banner.jpg");
-  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 80%;
   padding: 122px 0 92px;
 
   @media (min-width: 992px) {
@@ -107,6 +113,7 @@
 
 ::ng-deep .spots-carousel-indicators {
   margin-top: 32px;
+  padding: 0;
 }
 
 ::ng-deep .p-carousel-indicator-active .p-carousel-indicator-button {

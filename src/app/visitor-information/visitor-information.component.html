@@ -4,6 +4,9 @@
   <h3>{{ visitorInformation.title }}</h3>
   <p class="information__text">{{ visitorInformation.text }}</p>
   @if (visitorInformation.popup) {
-  <pop-up [popUp]="visitorInformation.popup"></pop-up>
+  <pop-up
+    class="information__button"
+    [popUp]="visitorInformation.popup"
+  ></pop-up>
   }
 </div>
