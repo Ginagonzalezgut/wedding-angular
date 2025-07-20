@@ -2,14 +2,25 @@
 
 .our-story {
   &__title {
-    font-size: 64px;
+    font-size: 32px;
     text-transform: none;
+
+    @media (min-width: 992px) {
+      font-size: 64px;
+    }
   }
 
   &__image {
+    background-image: url("/our-story-images/sectiongiselle&fernando.jpg");
+    background-size: cover;
     margin: auto;
-    width: 376px;
-    height: 549px;
+    aspect-ratio: 376/549;
+    width: 100%;
+
+    @media (min-width: 992px) {
+      width: 376px;
+      height: 549px;
+    }
   }
 
   &__text-left {
@@ -25,16 +36,36 @@
 
   &__small-image {
     height: 215px;
+    margin: 0 auto -80px;
+    position: relative;
+
+    @media (min-width: 992px) {
+      margin: auto;
+    }
   }
 
   &__big-image {
-    height: 511px;
+    height: auto;
+    width: 100%;
+
+    @media (min-width: 992px) {
+      height: 511px;
+      width: auto;
+    }
   }
 }
 
 .fourth-date img,
 .second-date img {
   width: 100%;
+}
+
+.third-date img {
+  width: 100%;
+
+  @media (min-width: 992px) {
+    width: auto;
+  }
 }
 
 .second-date,
@@ -44,12 +75,21 @@
 
 .second-date-story,
 .fourth-date-story {
-  margin-top: 60px;
+  @media (min-width: 992px) {
+    margin-top: 60px;
+  }
 }
 
 .banner {
   background-image: url("/our-story-images/banner_rsvp.jpg");
-  padding: 132px 0;
+  background-size: cover;
+  background-position: 52%;
+  padding: 32px 0;
+
+  @media (min-width: 992px) {
+    background-position: center;
+    padding: 132px 0;
+  }
 
   &-heading {
     @include banner-title;

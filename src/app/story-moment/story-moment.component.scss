@@ -1,7 +1,26 @@
+.story-moment {
+  text-align: center;
+
+  ::ng-deep p:last-child {
+    margin: 0;
+  }
+
+  @media (min-width: 992px) {
+    text-align: left;
+  }
+}
+
 .year {
-  font-size: 64px;
+  font-size: 40px;
   display: block;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
+  line-height: 1;
+
+  @media (min-width: 992px) {
+    font-size: 64px;
+    line-height: inherit;
+    margin-bottom: 32px;
+  }
 }
 
 .title {
