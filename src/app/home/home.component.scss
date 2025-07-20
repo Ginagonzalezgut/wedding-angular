@@ -21,15 +21,13 @@
   background-repeat: no-repeat;
   background-position: center;
   letter-spacing: 5px;
-
   padding: 218px 0 58px;
-  margin: 0 -20px 24px;
+  margin: 0 0 24px;
 
   @media (min-width: 992px) {
     background-image: url("/home-images/banner.jpg");
     background-size: cover;
     padding: 102px 104px;
-    margin: 0 0 24px;
   }
 }
 
