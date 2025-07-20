@@ -5,6 +5,8 @@
     <ng-content></ng-content>
   </div>
   @if(buttonLabel){
-  <app-link href="{{ href }}" target="_blank">{{ buttonLabel }}</app-link>
+  <app-link [isDark]="true" href="{{ href }}" target="_blank">{{
+    buttonLabel
+  }}</app-link>
   }
 </div>
