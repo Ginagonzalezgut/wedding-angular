@@ -56,7 +56,7 @@
   background-size: contain;
   padding: 122px 0 92px;
 
-  @media (min-width: 960px) {
+  @media (min-width: 992px) {
     background-size: cover;
   }
 
@@ -89,7 +89,7 @@
   margin: auto;
   max-width: 400px;
 
-  @media (min-width: 960px) {
+  @media (min-width: 992px) {
     max-width: none;
   }
 }
