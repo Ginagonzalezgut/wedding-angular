@@ -104,19 +104,19 @@
   margin: 0 -8px;
 }
 
-::ng-deep .p-carousel-indicator-button {
+::ng-deep button.p-carousel-indicator-button {
   border-radius: 100%;
   margin: 0 0.5rem;
   height: 0.75rem;
   width: 0.75rem;
 }
 
-::ng-deep .spots-carousel-indicators {
+::ng-deep ul.spots-carousel-indicators {
   margin-top: 32px;
   padding: 0;
 }
 
-::ng-deep .p-carousel-indicator-active .p-carousel-indicator-button {
+::ng-deep .p-carousel-indicator-active button.p-carousel-indicator-button {
   background: var(--text-color);
 }
 
