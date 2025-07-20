@@ -80,3 +80,11 @@
     display: block;
   }
 }
+
+.hero-ampersand {
+  display: block;
+
+  @media (min-width: 992px) {
+    display: inline-block;
+  }
+}
