@@ -21,7 +21,7 @@ export class HotelCardComponent {
 
   discountPopup: PopUp = {
     image: '',
-    title: 'DESCUENTO DE 15% EXCLUSIVO PARA NUESTROS INVITADOS',
+    title: 'DESCUENTO EXCLUSIVO PARA NUESTROS INVITADOS',
     icon: 'discount',
     content: [
       {
