@@ -30,13 +30,11 @@
 }
 
 .first-date {
-  display: flex;
-  flex-direction: row;
   align-items: center;
 
   &__small-image {
     height: 215px;
-    margin: 0 auto -80px;
+    margin: 0 auto;
     position: relative;
 
     @media (min-width: 992px) {
@@ -57,7 +55,12 @@
 
 .fourth-date img,
 .second-date img {
-  width: 100%;
+  margin: auto;
+  width: 70%;
+
+  @media (min-width: 992px) {
+    width: 100%;
+  }
 }
 
 .third-date img {
