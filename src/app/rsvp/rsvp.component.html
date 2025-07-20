@@ -7,14 +7,13 @@
       <div class="sheet" #sheet>
         <div class="container">
           @if (!loading && !done && !error) {
-          <div class="col-10 offset-1 form">
+          <div class="col-lg-10 offset-lg-1 form">
             <h2 class="mb-32 text-center">Confirma tu asistencia</h2>
             <p class="mb-64 sheet-intro">
-              Nuestro gran día no estaría completo sin ti. Queremos celebrar
-              este momento tan especial rodeados del amor de quienes más
-              queremos. Nos haría muchísima ilusión que nos acompañaras en
-              nuestra boda. Por favor, confirma tu asistencia a través de este
-              formulario antes del 15 de septiembre.
+              Nuestro gran día no estaría completo sin ti. Nos haría muchísima
+              ilusión que nos acompañaras en nuestra boda. Por favor, confirma
+              tu asistencia a través de este formulario antes del 15 de
+              septiembre.
             </p>
             <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
               <div class="row mb-48 gy-48">
