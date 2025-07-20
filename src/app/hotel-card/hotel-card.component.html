@@ -3,17 +3,18 @@
     class="hotel-card__image"
     src="/city-images/{{ hotel.imageName }}.jpg"
     alt="{{ hotel.alt }}"
-  />@if(hotel.discount){
-  <p class="hotel-card__discount">
-    DESCUENTO DE 15% PARA INVITADOS A LA BODA<br /><pop-up
-      [popUp]="discountPopup"
-      buttonLabel="Ver condiciones del descuento"
-      [buttonAsLink]="true"
-    ></pop-up>
-  </p>
-  }
+  />
 
   <div class="hotel-card__information">
+    @if(hotel.discount){
+    <p class="hotel-card__discount">
+      DESCUENTO PARA INVITADOS A LA BODA<br /><pop-up
+        [popUp]="discountPopup"
+        buttonLabel="Ver condiciones del descuento"
+        [buttonAsLink]="true"
+      ></pop-up>
+    </p>
+    }
     <p>{{ hotel.title }}</p>
     <app-link href="{{ hotel.url }}" target="_blank">Reservar</app-link>
   </div>
