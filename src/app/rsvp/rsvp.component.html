@@ -125,7 +125,9 @@
             <p class="pop-up-error-message text-center px-24">
               No pudimos confirmar tu asistencia. ¿Podrías intentarlo otra vez?
             </p>
-            <app-button (click)="onclick()">Reeintentar</app-button>
+            <app-button [isDark]="true" (click)="onclick()"
+              >Reeintentar</app-button
+            >
           </div>
           }
         </div>

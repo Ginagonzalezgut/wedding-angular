@@ -7,7 +7,7 @@
     <ng-content select=".hero__title"></ng-content>
     <h2 class="hero__subtitle">{{ subtitle }}</h2>
     @if (buttonDisplay) {
-    <app-link href="/rsvp">confirma tu asistencia</app-link>
+    <app-link [isDark]="true" href="/rsvp">confirma tu asistencia</app-link>
     }
   </div>
 </div>
