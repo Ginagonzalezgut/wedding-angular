@@ -52,7 +52,7 @@ export class FaqComponent {
         {
           question: '¿Qué hago si necesito cambiar mi respuesta?',
           answer:
-            'Si ya respondiste y necesitas hacer un cambio, puedes escribirnos directamente a [correo]',
+            'Si ya respondiste y necesitas hacer un cambio, puedes escribirnos directamente a adrypuente0109@gmail.com',
         },
       ],
     },
