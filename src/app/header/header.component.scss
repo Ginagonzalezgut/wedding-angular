@@ -18,14 +18,40 @@
   }
 }
 
-.desktop-menu {
-  display: none;
+.rsvp-wrapper {
+  width: 104px;
+}
 
-  @media (min-width: 992px) {
-    display: block;
+.menu-button {
+  background: none;
+  border: none;
+  height: 32px;
+  padding: 0;
+
+  ::ng-deep img {
+    height: 24px;
+    width: 24px;
   }
 }
 
-.rsvp-wrapper {
-  width: 104px;
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--background-color-dark);
+  z-index: 2;
+}
+
+.mobile-menu-close {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+
+  path {
+    fill: var(--text-color-light);
+  }
 }
