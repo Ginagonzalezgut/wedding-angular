@@ -16,6 +16,20 @@
 .city-page__hotels {
   background-color: var(--background-color-grey);
   display: block;
+  padding: 48px 0;
+  text-align: center;
+
+  @media (min-width: 992px) {
+    padding: 80px 0;
+  }
+
+  .hotels-icon {
+    margin-bottom: 24px;
+  }
+
+  .hotels-title {
+    margin-bottom: 32px;
+  }
 }
 
 .section-header {
@@ -83,6 +97,10 @@
   @media (min-width: 960px) {
     max-width: none;
   }
+}
+
+.hotels-mobile-content {
+  margin: 0 -8px;
 }
 
 ::ng-deep .p-carousel-indicator-button {
