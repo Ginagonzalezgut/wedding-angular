@@ -2,15 +2,20 @@
 
 .hero {
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position: center;
-  height: 100vh;
+  height: 700px;
   color: var(--text-color-light);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+
+  @media (min-width: 992px) {
+    background-attachment: fixed;
+    height: 100vh;
+  }
 
   &__title {
     @include hero-title;
