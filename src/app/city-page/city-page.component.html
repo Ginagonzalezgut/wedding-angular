@@ -134,15 +134,29 @@
   </div>
 </div>
 
-<div class="banner">
-  <div class="container">
-    <div class="col-7 text-left">
-      <h2 class="banner-heading">¿TIENES PREGUNTAS O NECESITAS AYUDA?</h2>
-      <p class="banner-tagline">
-        Nuestra Wedding Planner, se encargará de responder todas tus dudas.
-      </p>
-      <app-link [isDark]="true">contactar</app-link>
+<div class="desktop-only">
+  <div class="banner">
+    <div class="container">
+      <div class="col-7 text-left">
+        <h2 class="banner-heading">¿TIENES PREGUNTAS?</h2>
+        <p class="banner-tagline">
+          Nuestra Wedding Planner, se encargará de responder todas tus dudas.
+        </p>
+        <app-link [isDark]="true">contactar</app-link>
+      </div>
     </div>
+  </div>
+</div>
+
+<div class="mobile-only mobile-banner py-80">
+  <div class="container">
+    <h2 class="mobile-banner-title">
+      <span class="mobile-banner-title-top">¿Tienes</span>
+      <div class="banner-small-image"></div>
+      <span class="mobile-banner-title-bottom">preguntas?</span>
+    </h2>
+    <p>Nuestra Wedding Planner, se encargará de responder todas tus dudas.</p>
+    <app-link [isDark]="true">contactar</app-link>
   </div>
 </div>
 <app-footer />

@@ -76,6 +76,36 @@
     color: var(--text-color-light);
     margin-bottom: 48px;
   }
+
+  &-small-image {
+    background-image: url("/city-images/mobile-banner.jpg");
+    background-size: cover;
+    height: 280px;
+    margin: auto;
+    width: 164px;
+  }
+}
+
+.mobile-banner {
+  text-align: center;
+
+  &-title {
+    font-size: 40px;
+    line-height: 1;
+
+    span {
+      display: block;
+    }
+
+    &-top {
+      margin-bottom: -16px;
+    }
+
+    &-bottom {
+      margin-top: -24px;
+      margin-bottom: 48px;
+    }
+  }
 }
 
 .carousel-wrapper {
