@@ -230,13 +230,13 @@ export class CityPageComponent {
       },
     },
     {
-      icon: 'wheather',
+      icon: 'weather',
       title: 'CLIMA',
       text: 'Barranquilla tiene una temperatura promedio de 27,4 °C.',
       popup: {
         image: 'clima',
         title: 'clima',
-        icon: 'wheather',
+        icon: 'weather',
         content: [
           {
             subtitle: 'Prepárate para el calor y la humedad',
@@ -310,13 +310,13 @@ export class CityPageComponent {
       },
     },
     {
-      icon: 'segurity',
+      icon: 'security',
       title: 'SEGURIDAD',
       text: 'Con unas cuantas precauciones básicas podrás disfrutar al máximo de la ciudad.',
       popup: {
         image: 'seguridad',
         title: 'seguridad',
-        icon: 'segurity',
+        icon: 'security',
         content: [
           {
             subtitle: 'Evita zonas poco concurridas de noche',
