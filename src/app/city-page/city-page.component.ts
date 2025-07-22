@@ -102,7 +102,7 @@ export class CityPageComponent {
       title: 'TRANSPORTE',
       text: 'Barranquilla cuenta con un Sistema Integrado de Transporte.',
       popup: {
-        image: 'transporte-2',
+        image: 'transporte',
         title: 'TRANSPORTE',
         icon: 'transportation',
         content: [
