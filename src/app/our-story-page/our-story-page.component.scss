@@ -84,23 +84,20 @@
 }
 
 .banner {
-  background-image: url("/our-story-images/banner_rsvp.jpg");
-  background-size: cover;
-  background-position: 52%;
-  padding: 32px 0;
-
-  @media (min-width: 992px) {
-    background-position: center;
-    padding: 132px 0;
-  }
-
   &-heading {
     @include banner-title;
-    color: var(--text-color-light);
+    margin-bottom: 32px;
   }
 
   &-tagline {
     @include banner-tagline;
-    color: var(--text-color-light);
+  }
+
+  &-image {
+    aspect-ratio: 790/324;
+    background-image: url("/our-story-images/banner.jpg");
+    background-size: cover;
+    width: 100%;
+    margin-bottom: 32px;
   }
 }
