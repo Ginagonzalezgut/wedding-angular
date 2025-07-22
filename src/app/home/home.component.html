@@ -1,134 +1,84 @@
-<hero
-  backgroundImage="/home-images/hero-background.jpg"
-  [borderOn]="false"
-  subtitle="Oct 25, 2025"
-  [buttonDisplay]="true"
->
-  <div class="hero__title">
-    Giselle <span class="hero-ampersand">&</span> Fernando
-  </div>
-</hero>
-
-<app-quote>
-  <span class="home-quote">
-    Tenemos el placer de <em>invitarte</em> a uno de los días más importantes de
-    nuestras vidas. Deseamos vivir este momento rodeados del <em>amor</em> de
-    quienes más queremos.
-  </span>
-</app-quote>
-
-<app-countdown />
-
-<div class="container-lg">
-  <div class="row gx-0 reverse-on-mobile">
-    <div class="col-lg-6">
-      <div
-        class="section-image"
-        [style]="{ backgroundImage: 'url(/home-images/ceremonia.jpg)' }"
-      ></div>
+<div class="home">
+  <hero
+    backgroundImage="/home-images/hero-background.jpg"
+    [borderOn]="false"
+    subtitle="Oct 25, 2025"
+    [buttonDisplay]="true"
+  >
+    <div class="hero__title">
+      Giselle <span class="hero-ampersand">&</span> Fernando
     </div>
-    <div class="col-lg-6">
-      <card
-        titleText="Ceremonia"
-        buttonLabel="Cómo llegar"
-        icon="church"
-        href="https://maps.app.goo.gl/hRDWusxZ2Ya77RXD7"
-      >
-        <p>Hora: 6:45 pm (COT)</p>
-        <p>Parroquia Nuestra Señora de las Gracias de Torcoroma</p>
-        <p>
-          Cl. 84 # 51 - 45 <br />
-          Barranquilla, Colombia
-        </p>
-      </card>
-    </div>
-  </div>
-</div>
+  </hero>
 
-<div class="container-lg mt-32 mt-lg-0">
-  <div class="row gx-0">
-    <div class="col-lg-6">
-      <card
-        buttonLabel="cómo llegar"
-        titleText="Recepción"
-        icon="toast"
-        href="https://maps.app.goo.gl/bbmUmTe43oauz3p16"
-      >
-        <p>Hora: 8:30 pm (COT)</p>
-        <p>Hotel El Prado</p>
-        <p>
-          Cra 54 # 70-10 <br />
-          Barranquilla, Colombia
-        </p>
-      </card>
-    </div>
-    <div class="col-lg-6">
-      <div
-        class="section-image"
-        [style]="{ backgroundImage: 'url(/home-images/recepcion.jpg)' }"
-      ></div>
+  <app-quote>
+    <span class="home-quote">
+      Tenemos el placer de <em>invitarte</em> a uno de los días más importantes
+      de nuestras vidas. Deseamos vivir este momento rodeados del
+      <em>amor</em> de quienes más queremos.
+    </span>
+  </app-quote>
+
+  <app-countdown />
+
+  <div class="container-lg">
+    <div class="row gx-0 reverse-on-mobile">
+      <div class="col-lg-6">
+        <div
+          class="section-image"
+          [style]="{ backgroundImage: 'url(/home-images/ceremonia.jpg)' }"
+        ></div>
+      </div>
+      <div class="col-lg-6">
+        <card
+          titleText="Ceremonia"
+          buttonLabel="Cómo llegar"
+          icon="church"
+          href="https://maps.app.goo.gl/hRDWusxZ2Ya77RXD7"
+        >
+          <p>Hora: 6:45 pm (COT)</p>
+          <p>Parroquia Nuestra Señora de las Gracias de Torcoroma</p>
+          <p>
+            Cl. 84 # 51 - 45 <br />
+            Barranquilla, Colombia
+          </p>
+        </card>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="container mt-80 desktop-only">
-  <div class="row g-0">
-    <div class="col-lg-7">
-      <img
-        class="w-100"
-        src="/home-images/dress-code.jpg"
-        alt="Pareja celebrando felices el día de su boda"
-      />
+  <div class="container-lg mt-32 mt-lg-0">
+    <div class="row gx-0">
+      <div class="col-lg-6">
+        <card
+          buttonLabel="cómo llegar"
+          titleText="Recepción"
+          icon="toast"
+          href="https://maps.app.goo.gl/bbmUmTe43oauz3p16"
+        >
+          <p>Hora: 8:30 pm (COT)</p>
+          <p>Hotel El Prado</p>
+          <p>
+            Cra 54 # 70-10 <br />
+            Barranquilla, Colombia
+          </p>
+        </card>
+      </div>
+      <div class="col-lg-6">
+        <div
+          class="section-image"
+          [style]="{ backgroundImage: 'url(/home-images/recepcion.jpg)' }"
+        ></div>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="container mt-32 mt-lg-0">
-  <div class="row g-0">
-    <div class="col-lg-7 offset-lg-5">
-      <card
-        id="dresscode__card"
-        titleText="Dress Code"
-        buttonLabel="contactar"
-        href="https://wa.me/+573218217705"
-        icon="clothes"
-        [compact]="true"
-      >
-        <p>
-          Queremos que se sientan cómodos y se vean increíbles en un día tan
-          especial para nosotros, por eso les contamos un poco sobre el estilo
-          de vestimenta que imaginamos para la celebración:
-        </p>
-        <p>
-          Vestido Largo (Tipo Gala ) y Smoking negro. Los colores blanco y nude
-          están reservados para la novia. Si no sabes qué ponerte, ¡escríbenos y
-          te ayudamos encantados!
-        </p>
-      </card>
-    </div>
-  </div>
-</div>
-
-<div class="container mt-lg-80 mobile-only">
-  <div class="row g-0">
-    <div class="col-lg-7 offset-lg-1">
-      <img
-        class="w-100"
-        src="/home-images/dress-code.jpg"
-        alt="Pareja celebrando felices el día de su boda"
-      />
-    </div>
-  </div>
-</div>
-
-<div class="gift-container">
   <div class="container mt-80 desktop-only">
     <div class="row g-0">
-      <div class="col-lg-4">
+      <div class="col-lg-7">
         <img
-          class="w-100 position-relative"
-          src="/home-images/detalle-arriba.jpg"
-          alt=""
+          class="w-100"
+          src="/home-images/dress-code.jpg"
+          alt="Pareja celebrando felices el día de su boda"
         />
       </div>
     </div>
@@ -136,20 +86,24 @@
 
   <div class="container mt-32 mt-lg-0">
     <div class="row g-0">
-      <div class="col-lg-6 offset-lg-3">
+      <div class="col-lg-7 offset-lg-5">
         <card
-          class="gift__card"
-          titleText="UN DETALLE CON CARIÑO"
-          icon="gift"
+          id="dresscode__card"
+          titleText="Dress Code"
+          buttonLabel="contactar"
+          href="https://wa.me/+573218217705"
+          icon="clothes"
           [compact]="true"
         >
           <p>
-            Lo más importante para nosotros es contar con tu presencia en este
-            día tan especial.
+            Queremos que se sientan cómodos y se vean increíbles en un día tan
+            especial para nosotros, por eso les contamos un poco sobre el estilo
+            de vestimenta que imaginamos para la celebración:
           </p>
           <p>
-            Si desean hacernos un regalo, hemos optado por una lluvia de sobres,
-            que nos ayudará a comenzar esta nueva etapa juntos.
+            Vestido Largo (Tipo Gala ) y Smoking negro. Los colores blanco y
+            nude están reservados para la novia. Si no sabes qué ponerte,
+            ¡escríbenos y te ayudamos encantados!
           </p>
         </card>
       </div>
@@ -158,43 +112,91 @@
 
   <div class="container mt-lg-80 mobile-only">
     <div class="row g-0">
-      <div class="col-lg-4">
+      <div class="col-lg-7 offset-lg-1">
         <img
-          class="w-100 position-relative"
-          src="/home-images/detalle-arriba.jpg"
-          alt=""
+          class="w-100"
+          src="/home-images/dress-code.jpg"
+          alt="Pareja celebrando felices el día de su boda"
         />
       </div>
     </div>
   </div>
 
-  <div class="container">
-    <div class="row g-0">
-      <div class="col-4 offset-8 gift__image">
-        <img
-          class="w-100 position-relative"
-          src="/home-images/detalle-abajo.jpg"
-          alt=""
-        />
+  <div class="gift-container">
+    <div class="container mt-80 desktop-only">
+      <div class="row g-0">
+        <div class="col-lg-4">
+          <img
+            class="w-100 position-relative"
+            src="/home-images/detalle-arriba.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-32 mt-lg-0">
+      <div class="row g-0">
+        <div class="col-lg-6 offset-lg-3">
+          <card
+            class="gift__card"
+            titleText="UN DETALLE CON CARIÑO"
+            icon="gift"
+            [compact]="true"
+          >
+            <p>
+              Lo más importante para nosotros es contar con tu presencia en este
+              día tan especial.
+            </p>
+            <p>
+              Si desean hacernos un regalo, hemos optado por una lluvia de
+              sobres, que nos ayudará a comenzar esta nueva etapa juntos.
+            </p>
+          </card>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-lg-80 mobile-only">
+      <div class="row g-0">
+        <div class="col-lg-4">
+          <img
+            class="w-100 position-relative"
+            src="/home-images/detalle-arriba.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row g-0">
+        <div class="col-4 offset-8 gift__image">
+          <img
+            class="w-100 position-relative"
+            src="/home-images/detalle-abajo.jpg"
+            alt=""
+          />
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="container mb-80">
-  <div class="row">
-    <div class="col-lg-10 offset-lg-1 text-center">
-      <h2 class="banner-heading">
-        LA FIESTA
-        <span class="banner-space-chars">&nbsp; &nbsp; &nbsp;</span> NO ES LO
-        MISMO SIN TI
-      </h2>
-      <p class="banner-tagline"></p>
-      <p>Tu presencia hará que este día sea aún más especial.</p>
+  <div class="container mb-80">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1 text-center">
+        <h2 class="banner-heading">
+          LA FIESTA
+          <span class="banner-space-chars">&nbsp; &nbsp; &nbsp;</span> NO ES LO
+          MISMO SIN TI
+        </h2>
+        <p class="banner-tagline"></p>
+        <p>Tu presencia hará que este día sea aún más especial.</p>
 
-      <app-link href="/rsvp" [isDark]="true">confirma tu asistencia</app-link>
+        <app-link href="/rsvp" [isDark]="true">confirma tu asistencia</app-link>
+      </div>
     </div>
   </div>
-</div>
 
-<app-footer />
+  <app-footer />
+</div>

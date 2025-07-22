@@ -86,3 +86,11 @@
     margin: 0;
   }
 }
+
+.home {
+  @media (max-width: 992px) {
+    ::ng-deep .hero {
+      background-image: url("/home-images/hero-mobile.jpg") !important;
+    }
+  }
+}
