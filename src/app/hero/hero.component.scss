@@ -22,9 +22,16 @@
   }
 }
 .bg-right {
-  background-position: right;
+  background-position: 60% center;
+  @media (min-width: 992px) {
+    background-position: center;
+  }
 }
 
 ::ng-deep .hero__title {
   @include hero-title;
+  margin-top: -100px;
+  @media (min-width: 992px) {
+    margin-top: auto;
+  }
 }
