@@ -1,4 +1,5 @@
 .menu {
+  align-items: center;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -6,7 +7,6 @@
 
   @media (min-width: 992px) {
     flex-direction: row;
-    align-items: center;
     padding: 0;
     gap: 24px;
   }
