@@ -3,22 +3,17 @@
     <div class="row">
       <div class="col">
         <div class="header-content">
-          <div class="d-flex gap-24 align-items-center">
-            <button
-              class="menu-button mobile-only"
-              (click)="mobileMenuOpen = true"
-            >
-              <icon name="menu"></icon>
-            </button>
-            <a href="/">
-              <img
-                ngSrc="/logox2.png"
-                width="40"
-                height="40"
-                alt="Giselle & Fernando"
-              />
-            </a>
-          </div>
+          <button class="menu-button mobile-only" (click)="openMenu()">
+            <icon name="menu"></icon>
+          </button>
+          <a href="/">
+            <img
+              ngSrc="/logox2.png"
+              width="40"
+              height="40"
+              alt="Giselle & Fernando"
+            />
+          </a>
           <div class="desktop-only">
             <app-menu />
           </div>
@@ -31,9 +26,9 @@
   </div>
 </div>
 
-@if (mobileMenuOpen) {
-<div class="mobile-menu">
-  <button (click)="mobileMenuOpen = false" class="mobile-menu-close">
+@if (isMenuOpen) {
+<div class="mobile-menu mobile-only">
+  <button (click)="closeMenu()" class="mobile-menu-close">
     <svg
       width="14"
       height="14"
@@ -50,5 +45,16 @@
       ></path>
     </svg>
   </button>
+  <div class="mobile-menu-header">
+    <a href="/" (click)="closeMenu()">
+      <img
+        ngSrc="/logox2.png"
+        width="40"
+        height="40"
+        alt="Giselle & Fernando"
+      />
+    </a>
+  </div>
+  <app-menu (clickItem)="closeMenu()"></app-menu>
 </div>
 }

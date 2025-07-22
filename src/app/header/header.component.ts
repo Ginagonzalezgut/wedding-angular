@@ -11,5 +11,17 @@ import { IconComponent } from '../icon/icon.component';
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
-  mobileMenuOpen = false;
+  private mobileMenuOpen = false;
+
+  openMenu() {
+    this.mobileMenuOpen = true;
+  }
+
+  closeMenu() {
+    this.mobileMenuOpen = false;
+  }
+
+  get isMenuOpen() {
+    return this.mobileMenuOpen;
+  }
 }

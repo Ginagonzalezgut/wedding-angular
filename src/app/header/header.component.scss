@@ -27,6 +27,8 @@
   border: none;
   height: 32px;
   padding: 0;
+  text-align: left;
+  width: 104px;
 
   ::ng-deep img {
     height: 24px;
@@ -42,16 +44,28 @@
   right: 0;
   background: var(--background-color-dark);
   z-index: 2;
+  color: var(--text-color-light);
+
+  ::ng-deep .menu {
+    padding-block: 32px;
+  }
 }
 
 .mobile-menu-close {
   background: none;
   border: none;
   position: absolute;
-  right: 24px;
-  top: 24px;
+  left: 18px;
+  top: 18px;
 
   path {
     fill: var(--text-color-light);
   }
+}
+
+.mobile-menu-header {
+  display: flex;
+  align-items: center;
+  height: 68px;
+  justify-content: center;
 }

@@ -4,14 +4,29 @@
       routerLinkActive="active"
       [routerLinkActiveOptions]="{ exact: true }"
       routerLink="/"
+      (click)="onClickMenuItem()"
       >Inicio</a
     >
   </li>
   <li>
-    <a routerLinkActive="active" routerLink="/nuestra-historia"
+    <a
+      routerLinkActive="active"
+      routerLink="/nuestra-historia"
+      (click)="onClickMenuItem()"
       >Nuestra Historia</a
     >
   </li>
-  <li><a routerLinkActive="active" routerLink="/la-ciudad">La Ciudad </a></li>
-  <li><a routerLinkActive="active" routerLink="/faq">FAQ</a></li>
+  <li>
+    <a
+      routerLinkActive="active"
+      routerLink="/la-ciudad"
+      (click)="onClickMenuItem()"
+      >La Ciudad
+    </a>
+  </li>
+  <li>
+    <a routerLinkActive="active" routerLink="/faq" (click)="onClickMenuItem()"
+      >FAQ</a
+    >
+  </li>
 </ul>
