@@ -24,7 +24,8 @@ export class PopUpComponent {
   @Input() buttonAsLink: boolean = false;
 
   styles = {
-    width: this.popUp?.image ? '1150px' : '1000px',
+    maxWidth: this.popUp?.image ? '1150px' : '1000px',
+    width: '90%',
     height: '700px',
     border: 'none',
     borderRadius: 0,

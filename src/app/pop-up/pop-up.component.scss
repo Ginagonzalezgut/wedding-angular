@@ -12,36 +12,32 @@
   justify-content: center;
   margin: auto;
 
-  &__close {
-    background: none;
-    border: none;
-    position: absolute;
-    right: 24px;
-    top: 24px;
-
-    path {
-      fill: var(--text-color);
-    }
-  }
-
   &__card {
-    padding: 60px 0;
+    padding: 0 0 60px;
     display: flex;
     flex-direction: column;
     justify-content: start;
     position: relative;
   }
   &__content {
-    padding: 0 80px;
+    padding: 0 32px;
 
     @media (min-width: 992px) {
-      height: 580px;
-      overflow: scroll;
+      padding: 0 80px;
+
+      .pop-up__image + .pop-up__card > & {
+        padding-left: 430px;
+      }
     }
   }
   &__image {
     flex-shrink: 0;
     width: 350px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
 
     img {
       object-fit: cover;
@@ -55,6 +51,7 @@
     gap: 24px;
     align-items: center;
     margin-bottom: 34px;
+    text-align: center;
   }
   &__item {
     margin-bottom: 2rem;
