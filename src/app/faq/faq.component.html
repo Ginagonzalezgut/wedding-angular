@@ -7,12 +7,23 @@
     <div class="group">
       <h2 class="col-lg-3 group__title">{{ group.title }}</h2>
       <div class="col-lg-7 offset-lg-2 group__items">
-        @for (qa of group.items ; track $index) {
-        <div>
-          <h3 class="group__question">{{ qa.question }}</h3>
-          <p class="group__answer">{{ qa.answer }}</p>
-        </div>
-        }
+        <p-accordion [value]="0">
+          @for (qa of group.items ; track $index) {
+
+          <p-accordion-panel [value]="$index + 1">
+            <p-accordion-header
+              ><h3 class="group__question">
+                {{ qa.question }}
+              </h3></p-accordion-header
+            >
+            <p-accordion-content
+              ><p class="group__answer">{{ qa.answer }}</p></p-accordion-content
+            >
+          </p-accordion-panel>
+
+          <div></div>
+          }
+        </p-accordion>
       </div>
     </div>
     }

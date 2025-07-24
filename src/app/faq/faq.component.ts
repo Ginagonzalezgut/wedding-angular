@@ -1,11 +1,11 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { FooterComponent } from '../footer/footer.component';
 import { QuestionsGroup } from '../types/QuestionsGroup';
-import { title } from 'process';
+import { AccordionModule } from 'primeng/accordion';
 
 @Component({
   selector: 'app-faq',
-  imports: [FooterComponent],
+  imports: [FooterComponent, AccordionModule],
   templateUrl: './faq.component.html',
   styleUrl: './faq.component.scss',
 })
