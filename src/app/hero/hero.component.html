@@ -1,8 +1,4 @@
-<div
-  class="hero"
-  [class.bg-right]="bgRight"
-  [style.background-image]="`url(${backgroundImage})`"
->
+<div class="hero" [style.background-image]="`url(${backgroundImage})`">
   <div class="container">
     <ng-content select=".hero__title"></ng-content>
     <h2 class="hero__subtitle">{{ subtitle }}</h2>

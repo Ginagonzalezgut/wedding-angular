@@ -1,166 +1,167 @@
-<hero
-  backgroundImage="/our-story-images/hero-background.jpg"
-  subtitle="Cómo todo empezó"
-  [borderOn]="false"
-  [bgRight]="true"
->
-  <div class="hero__title">Nuestra Historia</div>
-</hero>
-<div class="container py-32 py-lg-80">
-  <div class="row">
-    <div class="col-lg-3">
-      <h2 class="our-story__title mb-16">Giselle</h2>
-      <p>
-        Amante de los atardeceres, médico por vocación, enamorada de la vida y
-        fiel seguidora de Dios.
-      </p>
-    </div>
-
-    <div class="col-lg-4 offset-lg-1">
-      <div class="our-story__image"></div>
-    </div>
-    <div class="col-lg-3 offset-lg-1 our-story__text-left">
-      <p class="mb-16 mt-24 mt-lg-0">
-        Amante del Junior FC, fiel servidor de Dios y de San José. En su tiempo
-        libre le gusta andar en su escarabajo.
-      </p>
-      <h2 class="our-story__title">Fernando</h2>
-    </div>
-  </div>
-</div>
-
-<app-quote>
-  "Por eso dejará el <em>hombre</em> a su padre y a su madre, y se unirá a su
-  <em>mujer</em>, y los dos serán una sola carne.” <br />
-  — Efesios 5, 31
-</app-quote>
-
-<div class="container py-32 py-lg-80">
-  <div class="row first-date g-24 g-lg-0 reverse-on-mobile">
-    <div class="col-lg-2 desktop-only">
-      <img
-        class="first-date__small-image"
-        src="/our-story-images/section2021.jpg"
-        alt=""
-      />
-    </div>
-    <div class="col-lg-4">
-      <img
-        class="first-date__big-image"
-        src="/our-story-images/section2021large.jpg"
-        alt=""
-      />
-    </div>
-
-    <div class="col-lg-5 offset-lg-1">
-      <story-moment [year]="2021" title="El mensaje que lo cambió todo">
-        <p>
-          Con mucha fe, Giselle rezaba la tradicional novena de Navidad. Su
-          deseo era claro: encontrar el amor. Y como si el cielo la escuchara,
-          el 25 de diciembre, Fernando reapareció en su vida con el mensaje que
-          lo cambió todo: "¡Giselle, qué linda sorpresa de Navidad!". Así
-          comenzó esta hermosa historia.
-        </p>
-      </story-moment>
-    </div>
-
-    <div class="col-lg-2 mobile-only">
-      <img
-        class="first-date__small-image"
-        src="/our-story-images/section2021.jpg"
-        alt=""
-      />
-    </div>
-  </div>
-</div>
-
-<div class="second-date py-32 py-lg-80">
-  <div class="container align-items-center">
-    <div class="row g-24 g-lg-0">
-      <div class="col-lg-5 offset-lg-1">
-        <div class="second-date-story">
-          <story-moment [year]="2022" title="Lo que pasó después">
-            <p>
-              Cada pareja vive su historia a su manera. En su caso, Giselle y
-              Fernando aprendieron a cultivar su amor desde la distancia, ella
-              en Buenos Aires y él en Bogotá.
-            </p>
-            <p>
-              Aún separados por kilómetros, compartían momentos cotidianos:
-              veían películas al mismo tiempo, cocinaban juntos por
-              videollamada, escuchaban juntos la misa por internet, incluso
-              rezaban el rosario juntos.
-            </p>
-          </story-moment>
-        </div>
-      </div>
-      <div class="col-lg-4 offset-lg-1">
-        <img src="/our-story-images/section2022.jpg" alt="" />
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="third-date container py-32 py-lg-80">
-  <div class="row align-items-start g-24 g-lg-0 reverse-on-mobile">
-    <div class="col-lg-6">
-      <img src="/our-story-images/section2023.jpg" alt="" />
-    </div>
-    <div class="col-lg-5 offset-lg-1">
-      <story-moment [year]="2023" title="El reencuentro">
-        <p>
-          Giselle regresó a su país después de varios años en Argentina. Ese
-          regreso marcó el inicio de una nueva etapa en su historia de amor.
-          Dios les permitió vivir todo aquello que antes sólo podían imaginar:
-          comer helado juntos, asistir a misa, disfrutar de los asados, y muchos
-          momentos especiales en pareja.
-        </p>
-
-        <p>
-          Fue un año en el que pudieron conocerse más, fortalecer su noviazgo y
-          empezar a soñar, esta vez con los pies en el mismo lugar.
-        </p>
-      </story-moment>
-    </div>
-  </div>
-</div>
-
-<div class="fourth-date">
+<div class="our-story">
+  <hero
+    backgroundImage="/our-story-images/hero-background.jpg"
+    subtitle="Cómo todo empezó"
+    [borderOn]="false"
+  >
+    <div class="hero__title">Nuestra Historia</div>
+  </hero>
   <div class="container py-32 py-lg-80">
-    <div class="row g-24 g-lg-0">
+    <div class="row">
+      <div class="col-lg-3">
+        <h2 class="our-story__title mb-16">Giselle</h2>
+        <p>
+          Amante de los atardeceres, médico por vocación, enamorada de la vida y
+          fiel seguidora de Dios.
+        </p>
+      </div>
+
+      <div class="col-lg-4 offset-lg-1">
+        <div class="our-story__image"></div>
+      </div>
+      <div class="col-lg-3 offset-lg-1 our-story__text-left">
+        <p class="mb-16 mt-24 mt-lg-0">
+          Amante del Junior FC, fiel servidor de Dios y de San José. En su
+          tiempo libre le gusta andar en su escarabajo.
+        </p>
+        <h2 class="our-story__title">Fernando</h2>
+      </div>
+    </div>
+  </div>
+
+  <app-quote>
+    "Por eso dejará el <em>hombre</em> a su padre y a su madre, y se unirá a su
+    <em>mujer</em>, y los dos serán una sola carne.” <br />
+    — Efesios 5, 31
+  </app-quote>
+
+  <div class="container py-32 py-lg-80">
+    <div class="row first-date g-24 g-lg-0 reverse-on-mobile">
+      <div class="col-lg-2 desktop-only">
+        <img
+          class="first-date__small-image"
+          src="/our-story-images/section2021.jpg"
+          alt=""
+        />
+      </div>
+      <div class="col-lg-4">
+        <img
+          class="first-date__big-image"
+          src="/our-story-images/section2021large.jpg"
+          alt=""
+        />
+      </div>
+
       <div class="col-lg-5 offset-lg-1">
-        <div class="fourth-date-story">
-          <story-moment [year]="2025" title="Empieza un nuevo capítulo">
-            <p>
-              Poco después, decidieron dar el sí ante Dios y unirse en el
-              sacramento del matrimonio para construir una familia. Hoy, cuentan
-              los días con ilusión, sabiendo que están a punto de celebrar su
-              amor rodeados de las personas que más quieren, en la boda con la
-              que siempre soñaron.
-            </p>
-          </story-moment>
+        <story-moment [year]="2021" title="El mensaje que lo cambió todo">
+          <p>
+            Con mucha fe, Giselle rezaba la tradicional novena de Navidad. Su
+            deseo era claro: encontrar el amor. Y como si el cielo la escuchara,
+            el 25 de diciembre, Fernando reapareció en su vida con el mensaje
+            que lo cambió todo: "¡Giselle, qué linda sorpresa de Navidad!". Así
+            comenzó esta hermosa historia.
+          </p>
+        </story-moment>
+      </div>
+
+      <div class="col-lg-2 mobile-only">
+        <img
+          class="first-date__small-image"
+          src="/our-story-images/section2021.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+
+  <div class="second-date py-32 py-lg-80">
+    <div class="container align-items-center">
+      <div class="row g-24 g-lg-0">
+        <div class="col-lg-5 offset-lg-1">
+          <div class="second-date-story">
+            <story-moment [year]="2022" title="Lo que pasó después">
+              <p>
+                Cada pareja vive su historia a su manera. En su caso, Giselle y
+                Fernando aprendieron a cultivar su amor desde la distancia, ella
+                en Buenos Aires y él en Bogotá.
+              </p>
+              <p>
+                Aún separados por kilómetros, compartían momentos cotidianos:
+                veían películas al mismo tiempo, cocinaban juntos por
+                videollamada, escuchaban juntos la misa por internet, incluso
+                rezaban el rosario juntos.
+              </p>
+            </story-moment>
+          </div>
+        </div>
+        <div class="col-lg-4 offset-lg-1">
+          <img src="/our-story-images/section2022.jpg" alt="" />
         </div>
       </div>
-      <div class="col-lg-4 offset-lg-1">
-        <img src="/our-story-images/section2025.jpg" alt="" />
+    </div>
+  </div>
+
+  <div class="third-date container py-32 py-lg-80">
+    <div class="row align-items-start g-24 g-lg-0 reverse-on-mobile">
+      <div class="col-lg-6">
+        <img src="/our-story-images/section2023.jpg" alt="" />
+      </div>
+      <div class="col-lg-5 offset-lg-1">
+        <story-moment [year]="2023" title="El reencuentro">
+          <p>
+            Giselle regresó a su país después de varios años en Argentina. Ese
+            regreso marcó el inicio de una nueva etapa en su historia de amor.
+            Dios les permitió vivir todo aquello que antes sólo podían imaginar:
+            comer helado juntos, asistir a misa, disfrutar de los asados, y
+            muchos momentos especiales en pareja.
+          </p>
+
+          <p>
+            Fue un año en el que pudieron conocerse más, fortalecer su noviazgo
+            y empezar a soñar, esta vez con los pies en el mismo lugar.
+          </p>
+        </story-moment>
       </div>
     </div>
   </div>
-</div>
 
-<div class="banner">
-  <div class="container py-80">
-    <div class="text-center row">
-      <div class="col-lg-8 offset-lg-2">
-        <h2 class="banner-heading">¿VIENES DE AFUERA?</h2>
-        <div class="banner-image"></div>
-        <p class="banner-tagline">
-          Descubre toda la información que necesitas saber sobre la ciudad.
-        </p>
-        <app-link [isDark]="true" href="/la-ciudad">Ver Información</app-link>
+  <div class="fourth-date">
+    <div class="container py-32 py-lg-80">
+      <div class="row g-24 g-lg-0">
+        <div class="col-lg-5 offset-lg-1">
+          <div class="fourth-date-story">
+            <story-moment [year]="2025" title="Empieza un nuevo capítulo">
+              <p>
+                Poco después, decidieron dar el sí ante Dios y unirse en el
+                sacramento del matrimonio para construir una familia. Hoy,
+                cuentan los días con ilusión, sabiendo que están a punto de
+                celebrar su amor rodeados de las personas que más quieren, en la
+                boda con la que siempre soñaron.
+              </p>
+            </story-moment>
+          </div>
+        </div>
+        <div class="col-lg-4 offset-lg-1">
+          <img src="/our-story-images/section2025.jpg" alt="" />
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<app-footer />
+  <div class="banner">
+    <div class="container py-80">
+      <div class="text-center row">
+        <div class="col-lg-8 offset-lg-2">
+          <h2 class="banner-heading">¿VIENES DE AFUERA?</h2>
+          <div class="banner-image"></div>
+          <p class="banner-tagline">
+            Descubre toda la información que necesitas saber sobre la ciudad.
+          </p>
+          <app-link [isDark]="true" href="/la-ciudad">Ver Información</app-link>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <app-footer />
+</div>

@@ -12,6 +12,11 @@
   align-items: center;
   text-align: center;
 
+  ::ng-deep .button {
+    padding-inline: 24px;
+    width: auto;
+  }
+
   @media (min-width: 992px) {
     background-attachment: fixed;
     height: 100vh;
@@ -21,17 +26,7 @@
     margin-bottom: 32px;
   }
 }
-.bg-right {
-  background-position: 60% center;
-  @media (min-width: 992px) {
-    background-position: center;
-  }
-}
 
 ::ng-deep .hero__title {
   @include hero-title;
-  margin-top: -100px;
-  @media (min-width: 992px) {
-    margin-top: auto;
-  }
 }
