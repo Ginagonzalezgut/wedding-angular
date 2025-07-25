@@ -1,7 +1,7 @@
-<div class="page">
-  <div class="hero">
-    <h1 class="title">Preguntas frecuentes</h1>
-  </div>
+<div class="faq">
+  <hero backgroundImage="/faq-images/background-faq.jpg" [borderOn]="false">
+    <div class="hero__title">Preguntas frecuentes</div>
+  </hero>
   <div class="groups container py-32 py-lg-80">
     @for (group of groups; track group.title) {
     <div class="group">
@@ -11,13 +11,16 @@
           @for (qa of group.items ; track $index) {
 
           <p-accordion-panel [value]="$index + 1">
-            <p-accordion-header
-              ><h3 class="group__question">
-                {{ qa.question }}
-              </h3></p-accordion-header
-            >
+            <p-accordion-header>
+              <p class="group__question">{{ qa.question }}</p>
+            </p-accordion-header>
             <p-accordion-content
-              ><p class="group__answer">{{ qa.answer }}</p></p-accordion-content
+              ><p class="group__answer">
+                {{ qa.answer }}
+                @if (qa.email) {
+                <a [href]="`mailto:${qa.email}`">{{ qa.email }}</a>
+                }
+              </p></p-accordion-content
             >
           </p-accordion-panel>
 

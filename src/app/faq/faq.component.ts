@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { FooterComponent } from '../footer/footer.component';
 import { QuestionsGroup } from '../types/QuestionsGroup';
 import { AccordionModule } from 'primeng/accordion';
+import { HeroComponent } from '../hero/hero.component';
 
 @Component({
   selector: 'app-faq',
-  imports: [FooterComponent, AccordionModule],
+  imports: [FooterComponent, AccordionModule, HeroComponent],
   templateUrl: './faq.component.html',
   styleUrl: './faq.component.scss',
 })
@@ -22,7 +23,7 @@ export class FaqComponent {
         {
           question: '¿Puedo llevar acompañante?',
           answer:
-            ' Por favor revisa tu invitación. Si puedes llevar acompañante, verás su nombre o la indicación de “+1',
+            ' Por favor revisa tu invitación. Si puedes llevar acompañante, verás su nombre o la indicación de "+1".',
         },
       ],
     },
@@ -52,7 +53,8 @@ export class FaqComponent {
         {
           question: '¿Qué hago si necesito cambiar mi respuesta?',
           answer:
-            'Si ya respondiste y necesitas hacer un cambio, puedes escribirnos directamente a adrypuente0109@gmail.com',
+            'Si ya respondiste y necesitas hacer un cambio, puedes escribirnos directamente a',
+          email: 'adrypuente0109@gmail.com',
         },
       ],
     },

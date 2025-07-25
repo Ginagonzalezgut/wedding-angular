@@ -1,39 +1,14 @@
 @use "../../scss/mixins.scss" as *;
 
-.page {
-  padding-top: 100px;
-
-  @media (min-width: 992px) {
-    padding-top: 68px;
-  }
-}
-
-.hero {
-  background-image: url(/faq-images/background-faq.jpg);
-  background-size: 500px 212px;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-inline: 24px;
-  padding-top: 24px;
-  @include center;
-
-  @media (min-width: 992px) {
-    background-size: 1000px 423px;
-    background-color: #dcdcdc;
-    margin-inline: 0;
-    height: 635px;
-    padding-top: 0;
-  }
-}
-.title {
+.hero__title {
+  margin: auto;
   max-width: 798px;
-  text-align: center;
-  @include hero-title;
 }
 .groups {
   display: flex;
   flex-direction: column;
   gap: 64px;
+  margin-bottom: 16px;
 
   @media (min-width: 992px) {
     gap: 96px;
@@ -41,10 +16,6 @@
 
   ::ng-deep .p-iconwrapper {
     transform: rotate(180deg);
-  }
-
-  ::ng-deep .p-accordionheader {
-    color: var(--text-color);
   }
 
   .group {
@@ -61,6 +32,11 @@
 
     &__title {
       margin-bottom: 0;
+      text-align: center;
+
+      @media (min-width: 992px) {
+        text-align: left;
+      }
     }
 
     &__items {
@@ -70,12 +46,21 @@
     }
 
     &__question {
-      font-weight: 600;
+      margin-bottom: 0;
       text-transform: none;
     }
 
     &__answer {
       margin-bottom: 0;
+
+      a {
+        border-bottom: 1px solid var(--text-color);
+      }
     }
+  }
+
+  ::ng-deep .p-accordionheader {
+    color: var(--text-color) !important;
+    font-weight: 400;
   }
 }

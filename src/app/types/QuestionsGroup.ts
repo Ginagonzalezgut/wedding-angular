@@ -1,6 +1,7 @@
 interface QA {
   question: string;
   answer: string;
+  email?: string;
 }
 
 export interface QuestionsGroup {
