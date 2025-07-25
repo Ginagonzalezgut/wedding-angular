@@ -1,9 +1,31 @@
 @use "../../scss/mixins.scss" as *;
 
+.faq {
+  ::ng-deep .hero {
+    background-position: center 68px;
+    background-repeat: no-repeat;
+    height: 90vh;
+    margin-inline: 32px;
+    margin-top: 32px;
+
+    @media (min-width: 992px) {
+      background-size: 1000px 423px;
+      background-color: #dcdcdc;
+      background-repeat: no-repeat;
+      margin-inline: 0;
+      height: 635px;
+      margin-top: 64px;
+      padding-top: 0;
+      background-attachment: scroll;
+    }
+  }
+}
+
 .hero__title {
   margin: auto;
   max-width: 798px;
 }
+
 .groups {
   display: flex;
   flex-direction: column;
