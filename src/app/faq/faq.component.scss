@@ -1,13 +1,13 @@
 @use "../../scss/mixins.scss" as *;
 
 .faq {
-  ::ng-deep .hero {
-    background-position: center 68px;
-    background-repeat: no-repeat;
-    height: 90vh;
-    margin-inline: 32px;
-    margin-top: 32px;
+  padding-top: 68px;
 
+  @media (min-width: 992px) {
+    padding-top: 0;
+  }
+
+  ::ng-deep .hero {
     @media (min-width: 992px) {
       background-size: 1000px 423px;
       background-color: #dcdcdc;
@@ -19,12 +19,25 @@
       padding-top: 0;
       background-attachment: scroll;
     }
+
+    @media (max-width: 992px) {
+      background-image: url("/faq-images/background-mobile.jpg") !important;
+      margin-inline: auto;
+      margin-top: 24px;
+      height: calc(100vh - 48px - 68px);
+      width: calc(100vw - 48px);
+    }
   }
 }
 
 .hero__title {
+  color: var(--text-color);
   margin: auto;
   max-width: 798px;
+
+  @media (min-width: 992px) {
+    color: var(--text-color-light);
+  }
 }
 
 .groups {
