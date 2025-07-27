@@ -94,3 +94,10 @@
     }
   }
 }
+
+.pray-and-dance {
+  margin-inline: -50px;
+  @media (min-width: 992px) {
+    margin-inline: -100px;
+  }
+}
