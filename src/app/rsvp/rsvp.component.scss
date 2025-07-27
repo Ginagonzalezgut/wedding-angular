@@ -30,14 +30,6 @@
   & > .container {
     padding-inline: 24px;
   }
-
-  &-intro {
-    text-align: center;
-
-    @media (min-width: 992px) {
-      text-align: left;
-    }
-  }
 }
 
 .form {
