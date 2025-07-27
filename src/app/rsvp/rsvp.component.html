@@ -9,11 +9,16 @@
           @if (!loading && !done && !error) {
           <div class="col-lg-10 offset-lg-1 form">
             <h2 class="mb-32 text-center">Confirma tu asistencia</h2>
-            <p class="mb-64 sheet-intro">
+            <p class="mb-16 sheet-intro">
               Nuestro gran día no estaría completo sin ti. Nos haría muchísima
               ilusión que nos acompañaras en nuestra boda. Por favor, confirma
               tu asistencia a través de este formulario antes del 15 de
               septiembre.
+            </p>
+            <p class="mb-64 sheet-intro">
+              <strong>Este formulario es individual.</strong>
+              Si hay más de una persona invitada en tu grupo, cada una debe
+              completar su propio formulario. ¡Gracias por tu comprensión!
             </p>
             <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
               <div class="row mb-48 gy-48">
