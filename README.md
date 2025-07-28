@@ -1,59 +1,66 @@
-# Boda
+# 💍 Boda de Giselle & Fernando
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.13.
+**Invitación digital a la boda de Giselle & Fernando.**
 
-## Development server
+Este sitio web está diseñado como una invitación digital interactiva para todos los invitados a la boda. Aquí encontrarán todos los detalles importantes sobre la ceremonia y la recepción, así como un formulario para confirmar su asistencia.
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
-```
+## ✨ Objetivo
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Facilitar a los invitados toda la información necesaria sobre el gran día de Giselle y Fernando:
 
-## Code scaffolding
+- Fecha, hora y lugar de la ceremonia religiosa.
+- Información de la recepción.
+- Formulario de RSVP (confirmación de asistencia).
+- Recomendaciones o información útil adicional.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
 
-```bash
-ng generate component component-name
-```
+## 🛠 Tecnologías utilizadas
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- **HTML5**
+- **CSS3**
+- **TypeScript**
+- **Angular**
+- **PrimeNG**
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+## 🚀 Cómo ejecutar el proyecto
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+### 1. Clona el repositorio
 
 ```bash
-ng test
+git clone https://github.com/Ginagonzalezgut/boda.git
+cd boda
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+### 2. Instala las dependecias
 
 ```bash
-ng e2e
+npm install
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+### 3.Ejecuta el servidor de desarrollo:
 
-## Additional Resources
+```bash
+npm start
+```
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+#### 4. Abre tu navegador para ver la aplicación
+
+```bash
+ open http://localhost:4200/
+```
+
+## 📅 Estado del proyecto
+
+✅ Finalizado y publicado.
+
+## 👩‍💻 Autora
+
+Diseñado y desarrollado por [@Ginagonzalezgut](https://github.com/Ginagonzalezgut)
+
+- LinkedIn: https://www.linkedin.com/in/ginagonzalezgut/
+- Website: https://ginagonzalezgut.com/
