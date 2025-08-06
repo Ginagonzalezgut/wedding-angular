@@ -15,7 +15,7 @@ export class CountdownComponent {
   minutes: number = 0;
   seconds: number = 0;
 
-  private targetDate: Date = new Date('2025-10-25T19:00:00-05:00');
+  private targetDate: Date = new Date('2026-07-04T19:00:00-05:00');
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
