@@ -54,7 +54,7 @@ export class FaqComponent {
           question: '¿Qué hago si necesito cambiar mi respuesta?',
           answer:
             'Si ya respondiste y necesitas hacer un cambio, puedes escribirnos directamente a',
-          email: 'adrypuente0109@gmail.com',
+          email: 'ginagonzalezgut@gmail.com',
         },
       ],
     },

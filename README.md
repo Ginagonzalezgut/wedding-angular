@@ -1,6 +1,6 @@
-# 💍 Boda de Giselle & Fernando
+# 💍 Boda de Gabrielle & Francis
 
-**Invitación digital a la boda de Giselle & Fernando.**
+**Invitación digital a la boda de Gabrielle & Francis.**
 
 Este sitio web está diseñado como una invitación digital interactiva para todos los invitados a la boda. Aquí encontrarán todos los detalles importantes sobre la ceremonia y la recepción, así como un formulario para confirmar su asistencia.
 
@@ -8,7 +8,7 @@ Este sitio web está diseñado como una invitación digital interactiva para tod
 
 ## ✨ Objetivo
 
-Facilitar a los invitados toda la información necesaria sobre el gran día de Giselle y Fernando:
+Facilitar a los invitados toda la información necesaria sobre el gran día de Gabrielle & Francis:
 
 - Fecha, hora y lugar de la ceremonia religiosa.
 - Información de la recepción.

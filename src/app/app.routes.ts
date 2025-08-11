@@ -6,7 +6,7 @@ import { FaqComponent } from './faq/faq.component';
 import { RsvpComponent } from './rsvp/rsvp.component';
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent, title: 'Giselle & Fernando' },
+  { path: '', component: HomeComponent, title: 'Gabrielle & Francis' },
   { path: 'la-ciudad', component: CityPageComponent, title: 'La Ciudad' },
   {
     path: 'nuestra-historia',
