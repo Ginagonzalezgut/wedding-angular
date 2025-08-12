@@ -27,8 +27,8 @@ export class HotelCardComponent {
       {
         subtitle: '',
         description: [
-          'Aplicar código de descuento 27312.',
-          'Válido solo para reservas con fechas entre el 22 y el 28 de octubre de 2025, realizadas hasta el 8 de octubre de 2025.',
+          'Aplicar código de descuento #5223.',
+          'Válido solo para reservas con fechas entre el 1 y el 4 de julio de 2026.',
           'Tarifa no reembolsable, incluye desayuno buffet.',
           'Válida para 1 o 2 personas. Máx. 1 adulto adicional ($90.000 COP + IVA)',
           'Hasta 2 niños gratis (menores de 12 años)',
